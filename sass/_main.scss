@@ -270,12 +270,8 @@
 .service {
     position: relative;
     padding-top: 29rem;
-    background: #F8F8F8;
-    
+    padding-bottom: 18rem;
 
-
-    
-    
     &__about-block {
         width: 110rem;
         height: 40rem;
@@ -374,6 +370,7 @@
     }
     
     &__title-wrap {
+        width: 50%;
         
     }
     
@@ -424,6 +421,7 @@
         height: 18.1rem;
         background-color: #ffffff;
         border-radius: 0px 4.5rem;
+        padding: 4.5rem 6.4rem 2.8rem 4rem;
 
         position: relative;
         z-index: 1;
@@ -441,7 +439,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        top: -50%;
+        top: -2rem;
+        left: 4rem;
 
         img {
             width: 2.4rem;
@@ -456,6 +455,8 @@
         position: absolute;
         width: 2rem;
         height: 1.5rem;
+        right: 4rem;
+        top: 2.6rem;
 
         img {
             height: 100%;
@@ -465,12 +466,429 @@
     }
     
     &__title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: rgba(22, 11, 21, 1);
+        margin-bottom: 1.8rem;
+    }
     
+    &__subtitle {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: rgba(22, 11, 21, 1);
+    }
+}
+
+
+
+.work {
+    background: #ffffff;
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    margin-bottom: 16.1rem;
+
+    &__inner {
+
+    }
+    
+   
+    &__top-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+    
+    &__title-wrap {
+        width: 50%;
+    }
+    
+    
+    &__title {
+        margin-bottom: 1.2rem;
+    }
+    
+    
+    &__subtitle {
+    
+    }
+    
+    
+    &__top-btn {
+    
+    }
+    
+    
+    &__content {
+        display: flex;
+    }
+    
+    &__box {
+        width: 37rem;
+        height: 32rem;
+        border: 1px solid #E0E0E0;
+        padding: 4.5rem;
+
+        &:first-child {
+            border-radius: 6rem 0 0 0;
+        }
+        
+        &:last-child {
+            border-radius: 0 0 6rem 0;
+        }
+    }
+    
+    &__box-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.9rem;
+    
+    }
+    
+    &__box-img {
+        width: 7rem;
+        height: 7rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__box-num {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: rgba(119, 119, 119, 1);
+    
+    }
+    
+    &__box-title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: rgba(22, 11, 21, 1);
+        margin-bottom: 1.5rem;
+    
+    }
+    
+    &__box-subtitle {
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 1.268;
+    }
+
+}
+
+
+
+
+.choose {
+    margin-bottom: 16rem;
+
+    &__inner {
+
+    }
+    
+    &__top-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+    
+    &__title-wrap {
+        width: 50%;
+    }
+    
+    
+    &__title {
+        margin-bottom: 1.2rem;
     }
     
     &__subtitle {
     
     }
+    
+    &__top-btn {
+    
+    }
+    
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__box {
+        width: 45rem;
+        height: 32.4rem;
+        border-radius: 0 6rem 0 6rem;
+
+        display: flex;
+        align-items: flex-end;
+
+        position: relative;
+
+        &:not(:nth-child(n+7)) {
+            margin-bottom: 5.2rem;
+        }
+
+        &:not(:nth-child(3n)) {
+            margin-right: 6.4rem;
+        }
+    }
+    
+    &__box-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 24rem;
+        border-radius: 6rem 0rem 0 0rem;
+    }
+    
+    &__box-num-wrap {
+        width: 4.4rem;
+        height: 8.5rem;
+        background-color: #ffffff;
+        border-radius: 1.5rem;
+        padding: 2.1rem 1.2rem;
+
+        position: absolute;
+        right: -2.2rem;
+        top: 50%;
+        transform: translateY(-50%);
+    
+    }
+    
+    &__box-num-symbol {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: rgba(119, 119, 119, 1);
+        text-align: center;
+        margin-bottom: 0.8rem;
+    }
+    
+    &__box-num-num {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: rgba(41, 45, 50, 1);
+    }
+    
+    &__box-bottom {
+        height: 12.4rem;
+        position: relative;
+        padding: 2rem 3rem;
+        z-index: 2;
+    
+    }
+    
+    &__box-text-substrate {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__box-bottom-text {
+        position: relative;
+        z-index: 2;
+    }
+    
+    &__box-title {
+        font-size: 1.9rem;
+        font-weight: 600;
+        color: rgba(41, 45, 50, 1);
+        margin-bottom: 1.7rem;
+        padding-right: 1.5rem;
+        width: 70%;
+    }
+    
+    &__box-subtitle-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    &__box-subtitle {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: rgba(41, 45, 50, 1);
+        width: 80%;
+        padding-right: 1.5rem;
+    }
+    
+    &__box-text-img {
+        width: 2.7rem;
+        height: 2.7rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 }
 
+
+
+
+.reviews {
+    margin-bottom: 18.7rem;
+
+    
+    &__inner {
+    
+    }
+    
+    &__top-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+    
+    &__title-wrap {
+        width: 50%;
+    }
+    
+    
+    &__title {
+        margin-bottom: 1.2rem;
+    }
+   
+    
+    &__subtitle {
+    
+    }
+    
+    
+    &__control-wrap {
+    
+    }
+    
+    &__control-top {
+    display: flex;
+    }
+    
+    &__control-fraction {
+    
+    }
+   
+    
+    &__control-arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    
+    &__control-arrow-prew {
+    
+    }
+    
+    &__control-arrow-next {
+    
+    }
+    
+    &__control-pagination {
+    
+    }
+    
+    &__content {
+    display: flex;
+    }
+  
+    
+    &__content-wrapper {
+        display: flex;
+    
+    }
+   
+    
+    &__slide {
+        width: 45.9rem;
+        height: 43.9rem;
+
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 7.1rem;
+        }
+    }
+   
+    
+    &__slide-substrate {
+        width: 34rem;
+        height: 35rem;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 6rem 0 4.5rem;
+        padding-top: 30rem;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    &__slide-inner {
+    
+    }
+    
+    &__slide-mail-img {
+        width: 45.9rem;
+        height: 30rem;
+
+        // background: linear-gradient(296.63deg, rgba(56, 56, 56, 0.3) 27.21%, rgba(0, 0, 0, 0) 73.32%);
+        // filter: blur(14px);
+        // transform: matrix(-1, 0, 0, 1, 0, 0);
+
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        position: relative;
+    
+    }
+    
+    &__slide-text-wrap {
+        width: 32rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2.1rem;
+        height: 13.9rem;
+
+        display: flex;
+        align-items: center;
+        position: relative;
+
+    }
+    
+    &__slide-more {
+        width: 5rem;
+        height: 5rem;
+        background: #ffffff;
+        box-shadow: -1rem 1rem 6rem rgba(22, 11, 21, 0.1);
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        position: absolute;
+        right: 3.8rem;
+        bottom: 5rem;
+    }
+    
+    &__slide-name-company {
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: rgba(22, 11, 21, 1);
+    }
+
+}
 
