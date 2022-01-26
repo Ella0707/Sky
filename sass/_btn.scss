@@ -1,0 +1,40 @@
+
+.btn {
+    width: 23.4rem;
+    height: 6rem;
+    border-radius: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #292D32;
+}
+
+.btn--white {
+    background-color: #ffffff;
+}
+
+.btn--transparent {
+    border: 1px solid #D6D6D6;
+}
+
+
+
+
+
+
+.title {
+    font-size: 7rem;
+    font-weight: 400;
+    color: #292D32;
+}
+
+
+.subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #292D32;
+}
