@@ -38,3 +38,88 @@
     font-weight: 300;
     color: #292D32;
 }
+
+
+.control {
+
+    &__wrap {
+        width: 35rem;
+    }
+    
+    &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2.6rem;
+    }
+    
+    &__fraction {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #777777;
+        
+        .swiper-pagination-current {
+            font-size: 4rem;
+            font-weight: 400;
+            color: #292D32;
+            margin-right: 1.3rem;
+        }
+
+        .swiper-pagination-total {
+            margin-left: 0.8rem;
+        }
+    }
+   
+    
+    &__arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5rem;
+   
+    }
+    
+    
+    &__arrow-prew {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__arrow-next {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+
+    
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    &__pagination {
+    
+    }
+
+    &__scrollbar {
+        width: 34rem;
+        height: 0.1rem;
+        background: rgba(119, 119, 119, 0.3);
+
+         .swiper-scrollbar-drag {
+            height: 0.2rem;
+            background: #C81F41;
+         }
+    }
+    
+}
+
+

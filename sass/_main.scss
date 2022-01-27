@@ -778,18 +778,17 @@
    
     
     &__control-arrows {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   
+   
     }
     
     
     &__control-arrow-prew {
-    
+      
     }
     
     &__control-arrow-next {
-    
+     
     }
     
     &__control-pagination {
@@ -797,25 +796,26 @@
     }
     
     &__content {
-    display: flex;
+    // display: flex;
+    overflow: hidden;
     }
   
     
     &__content-wrapper {
-        display: flex;
+        // display: flex;
     
     }
    
     
     &__slide {
-        width: 45.9rem;
+        // width: 45.9rem;
         height: 43.9rem;
 
         position: relative;
 
-        &:not(:last-child) {
-            margin-right: 7.1rem;
-        }
+        // &:not(:last-child) {
+        //     margin-right: 7.1rem;
+        // }
     }
    
     
@@ -889,6 +889,107 @@
         font-weight: 600;
         color: rgba(22, 11, 21, 1);
     }
+}
+
+
+
+
+
+.partners {
+    padding: 16rem 0 18rem 0;
+    background-color: #ffffff;
+
+    
+    &__inner {
+    
+    }
+    
+    &__top-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+    
+    &__title-wrap {
+        width: 50%;
+    }
+    
+    
+    &__title {
+        margin-bottom: 1.2rem;
+    }
+    
+    
+    // &__subtitle {
+    
+    // }
+  
+    // &__control-wrap {
+    
+    // }
+   
+    
+    // &__control-top {
+    
+    // }
+   
+    // &__control-fraction {
+    
+    // }
+   
+    
+    // &__control-arrows {
+    
+    // }
+   
+    
+    // &__control-arrow-prew {
+    
+    // }
+   
+    
+    // &__control-arrow-next {
+    
+    // }
+   
+    
+    // &__control-scrollbar {
+    
+    // }
+   
+    
+    &__content {
+        width: 100%;
+        border-radius: 6rem 0rem 6rem 0rem;
+        border: 1px solid #E0E0E0;
+        overflow: hidden;
+    }
+   
+    
+    &__content-wrapper {
+    }
+   
+    
+    &__slide {
+        border-left: 1px solid #E0E0E0;
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+        height: 30rem;
+    }
+  
+    
+    &__slide-img {
+    
+    }
+    
+    &__slide-title {
+    
+    }
+    
 
 }
+
 
