@@ -60,3 +60,12 @@ let partnersSlider = new Swiper('.partners__content', {
       }
     },
 });
+
+
+$('.header__burger-menu').on('click', function (e) {
+  e.preventDefault();
+  document.body.classList.toggle('lock');
+  $('.header__burger-menu').toggleClass("active");
+  $('.header__menu').toggleClass("active");
+  $('.header').toggleClass("active");
+});

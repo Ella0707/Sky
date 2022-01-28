@@ -1,6 +1,28 @@
+.mobile {
+    display: none;
+}
+
+
+@media (max-width: 48em) {
+
+    .desctop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+
 .header {
     position: relative;
     padding-top: 5rem;
+    transition: 0.8s;
+
+    &.active {
+        background: #212129;
+        padding-bottom: 5rem;
+    }
 
     &__inner {
         display: flex;
@@ -10,14 +32,14 @@
     }
 
     &__logo-wrap {
-        display: flex;
-        margin-right: 2.5rem;
+        
+        margin-right: 0;
     }
 
     &__logo-img {
-        width: 6.2rem;
-        height: 2.8rem;
-        margin-right: 0.8rem;
+        width: 12.4rem;
+        height: 5.6rem;
+        margin-right: 1.6rem;
 
         img {
             height: 100%;
@@ -25,34 +47,67 @@
         }
     }
 
-    &__logo-name {}
+    &__logo-name {
+        
+    }
 
     &__logo-name-top {
-        font-size: 2rem;
-        font-weight: 600;
-        color: #ffffff;
+        font-size: 3.4rem;
     }
 
     &__logo-name-down {
-        font-size: 1.4rem;
-        font-weight: 300;
-        color: #ffffff;
+        font-size: 3.2rem;
     }
 
-    &__menu {}
+    &__burger-menu {
+        width: 5.5rem;
+        height: 5rem;
+
+        background-image: url(./../img/burger-menu.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 3rem;
+        position: relative;
+
+        z-index: 999;
+        transition: 0.8s;
+
+        &.active {
+            background-image: url(./../img/close.svg);
+        }
+    }
+
+    &__menu {
+        width: 100%;
+        position: absolute;
+        top: 13rem;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateY(-100%);
+        transition: 0.8s;
+        background: #212129;
+        padding: 10rem;
+        opacity: 0;
+        // color: #ffffff;
+
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+            z-index: 10;
+        }
+    }
 
     &__menu-list {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 7rem;
     }
 
     &__menu-item {
 
-        font-size: 1.7rem;
-        font-weight: 600;
-        // color: #ffffff;
-        position: relative;
+        font-size: 3.6rem;
 
         &:not(:nth-child(n+5)) {
             &:before {
@@ -60,17 +115,18 @@
                 background-image: url(./../img/arrow-menu.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
-                width: 1rem;
-                height: 0.8rem;
+                width: 2rem;
+                height: 1.5rem;
 
                 position: absolute;
-                right: -1.8rem;
-                top: 50%;
+                right: -4rem;
+                top: 2rem;
             }
         }
 
         &:not(:last-child) {
-            margin-right: 5.1rem;
+            margin-right: 0;
+            margin-bottom: 5rem;
         }
 
         &:hover {
@@ -90,17 +146,15 @@
     }
 
     &__menu-link {
-        font-size: 1.7rem;
-        font-weight: 600;
-        color: #ffffff;
+        font-size: 3.2rem;
         padding-bottom: 2rem;
     }
 
     &__menu-sub-list {
-        width: 29rem;
-        background: #ffffff;
-        box-shadow: 0px 20px 60px rgba(86, 86, 86, 0.1);
-        border-radius: 0rem 4.5rem;
+        width: 100%;
+        background: #212129;
+        box-shadow: none;
+        border-radius: 0;
         padding: 3rem 2.8rem 3.5rem 3rem;
         display: flex;
         flex-direction: column;
@@ -113,34 +167,20 @@
     }
 
     &__menu-sub-item {
-        font-size: 1.7rem;
-        font-weight: 400;
-        color: #292D32;
-
+        font-size: 3rem;
 
         &:not(:last-child) {
             margin-bottom: 2rem;
         }
     }
 
-    &__contacts {
-        display: flex;
-    }
-
     &__tel-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-right: 2.8rem;
-    }
-
-    &__tel-top-wrap {
-        display: flex;
+        margin-right: 0;
     }
 
     &__tel-top-img {
-        width: 1.83rem;
-        height: 1.83rem;
+        width: 4.5rem;
+        height: 4.5rem;
         margin-right: 1.27rem;
 
         img {
@@ -150,34 +190,27 @@
     }
 
     &__tel {
-        font-size: 1.8rem;
-        font-weight: 600;
-        color: #ffffff;
-        margin-bottom: 0.5rem;
+        display: none;
     }
 
     &__tel-down {
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: #ffffff;
+       display: none;
     }
 
     &__social-wrap {
-        display: flex;
-        align-items: center;
+
+        &.mobile {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__social-link {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 5rem;
+        height: 5rem;
 
         &:not(:last-child) {
             margin-right: 2.5rem;
-        }
-
-        img {
-            height: 100%;
-            object-fit: contain;
         }
     }
 
@@ -208,34 +241,22 @@
 
 
     &__text-block {
-        width: 67.4rem;
-        height: 37.6rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
+        width: 100%;
+        height: 100%;
     }
 
     &__location-wrap {
-        display: flex;
-        margin-bottom: 0.6rem;
+        margin-bottom: 2rem;
     }
 
     &__loc-img {
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-right: 0.5rem;
-
-        img {
-            height: 100%;
-            object-fit: contain;
-        }
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1rem;
     }
 
     &__location-sity {
-        font-size: 2rem;
-        font-weight: 400;
-        color: #ffffff;
+        font-size: 3rem;
     }
 
     &__title-wrap {
@@ -246,18 +267,12 @@
     }
 
     &__title {
-        margin-bottom: 1.8rem;
+        margin-bottom: 5.4rem;
         line-height: 1.268;
-        span {
-            font-weight: 700;
-        }
-
     }
 
     &__subtitle {
-        font-size: 2rem;
-        font-weight: 400;
-        color: #ffffff;
+        font-size: 3rem;
     }
 
     &__btn {
@@ -270,19 +285,19 @@
 
 .service {
     position: relative;
-    padding-top: 29rem;
+    padding-top: 135rem;
     padding-bottom: 18rem;
 
     &__about-block {
-        width: 110rem;
-        height: 40rem;
+        width: 71rem;
+        // height: 85.6rem;
         background: #FFFFFF;
-        border-radius: 0px 0px 0px 6rem;
+        border-radius: 0;
 
-        display: flex;
+        flex-direction: column;
 
         position: absolute;
-        top: -27.5rem;
+        top: -5rem;
         right: 0;
     }
     
@@ -290,25 +305,36 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%;
-        width: 50%;
+        height: 46.8rem;
+        width: 100%;
 
-        padding:  5.4rem 2rem 6.5rem 6rem;
+        padding:  8rem 9rem 9rem 7rem;
     }
     
     &__about-left-text {
-        font-size: 1.7rem;
+        font-size: 3rem;
         font-weight: 600;
         color: #160B15;
         padding: 1rem;
     }
     
     &__about-left-title {
-        font-size: 3rem;
+        font-size: 3.4rem;
         margin-bottom: 2.6rem;
     }
+
+    &__about-left-item-wrap {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "one three"
+        "two four";
+      }
     
     &__about-left-item {
+        width: 35rem;
         position: relative;
         padding-left: 2.5rem;
         line-height: 1.6;
@@ -322,7 +348,22 @@
             position: absolute;
             left: 0rem;
             top: 0rem;
+        }
 
+        &.one {
+            grid-area: one;
+        }
+
+        &.two {
+            grid-area: two;
+        }
+
+        &.three {
+            grid-area: three;
+        }
+
+        &.four{
+            grid-area: four;
         }
     }
 
@@ -334,9 +375,10 @@
         display: flex;
         align-items: center;
         padding-left: 7rem;
-        width: 50%;
-        
-
+        padding-top: 12.6rem;
+        height: 38.8rem;
+        width: 100%;
+    
         position: relative;
     
     }
@@ -350,7 +392,7 @@
     }
     
     &__about-right-title {
-        font-size: 2.7rem;
+        font-size: 3.6rem;
         font-weight: 600;
         color: #160B15;
         line-height: 1.65;
@@ -358,7 +400,7 @@
         position: relative;
         z-index: 1;
 
-        width: 27rem;
+        width: 34rem;
     }
 
     
@@ -1418,4 +1460,7 @@
     }
   
     
+
+
+}
    
