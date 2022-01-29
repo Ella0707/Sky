@@ -1,7 +1,7 @@
 let reviewSlider = new Swiper('.reviews__content', {
-    slidesPerView: 3,
+    slidesPerView: 1.5,
     speed: 800,
-    spaceBetween: 71,
+    spaceBetween: 53,
   
     navigation: {
         nextEl: '.reviews__control-arrow-next',
@@ -27,13 +27,19 @@ let reviewSlider = new Swiper('.reviews__content', {
           return '<span class="' + currentClass + '"></span>' + '<span class="asd">/</span>' + '<span class="' + totalClass + '"></span>';
         }
       },
+
+      breakpoints: {
+        769: {
+          slidesPerView: 3,
+          spaceBetween: 71,
+        }
+    }
 });
 
 
 let partnersSlider = new Swiper('.partners__content', {
-  slidesPerView: 5,
+  slidesPerView: 2,
   speed: 800,
-  // spaceBetween: 71,
 
   navigation: {
       nextEl: '.partners__control-arrow-next',
@@ -59,6 +65,12 @@ let partnersSlider = new Swiper('.partners__content', {
         return '<span class="' + currentClass + '"></span>' + '<span class="asd">/</span>' + '<span class="' + totalClass + '"></span>';
       }
     },
+
+    breakpoints: {
+      769: {
+        slidesPerView: 5,
+      }
+  }
 });
 
 
@@ -69,3 +81,11 @@ $('.header__burger-menu').on('click', function (e) {
   $('.header__menu').toggleClass("active");
   $('.header').toggleClass("active");
 });
+
+
+$(".header__menu-item").click(function(e) {
+  e.preventDefault();
+  $(this).toggleClass('active');
+  $(".header__menu-sub-list").toggleClass('active');
+})
+
