@@ -729,6 +729,7 @@ input[type=number] {
   font-weight: 400;
   color: #ffffff;
 }
+
 .service {
   position: relative;
   padding-top: 29rem;
@@ -1773,6 +1774,8 @@ input[type=number] {
     position: absolute;
     right: -3.2rem;
     top: 2rem;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
   }
   .header__menu-item:not(:last-child) {
     margin-right: 0;
@@ -1783,6 +1786,10 @@ input[type=number] {
   }
   .header__menu-item.active:not(:last-child) {
     margin-bottom: 1.3rem;
+  }
+  .header__menu-item.active::before {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
   }
   .header__menu-link {
     font-size: 3.2rem;
@@ -1876,6 +1883,7 @@ input[type=number] {
     font-size: 3rem;
     width: 53%;
   }
+
   .service {
     padding-top: 93rem;
     padding-left: 1rem;
