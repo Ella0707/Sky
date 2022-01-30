@@ -305,6 +305,7 @@
         font-size: 1.7rem;
         font-weight: 600;
         color: #160B15;
+        margin-bottom: 4rem;
     }
     
     &__about-left-title {
@@ -328,10 +329,6 @@
             top: 0rem;
 
         }
-    }
-
-    &__about-btn {
-        margin-left: 1rem;
     }
     
     &__about-right {
@@ -898,7 +895,7 @@
 .partners {
     padding: 16.2rem 0 18rem 0;
     background-color: #ffffff;
-    margin-bottom: 18rem;
+    margin-bottom: 17rem;
 
     
     &__inner {
@@ -922,45 +919,6 @@
         margin-bottom: 1.5rem;
     }
     
-    
-    // &__subtitle {
-    
-    // }
-  
-    // &__control-wrap {
-    
-    // }
-   
-    
-    // &__control-top {
-    
-    // }
-   
-    // &__control-fraction {
-    
-    // }
-   
-    
-    // &__control-arrows {
-    
-    // }
-   
-    
-    // &__control-arrow-prew {
-    
-    // }
-   
-    
-    // &__control-arrow-next {
-    
-    // }
-   
-    
-    // &__control-scrollbar {
-    
-    // }
-   
-    
     &__content {
         width: 100%;
         border-radius: 6rem 0rem 6rem 0rem;
@@ -972,6 +930,12 @@
     &__content-wrapper {
     }
    
+    &__control-scrollbar {
+        .swiper-scrollbar-drag {
+            background: #FAAA3D;
+        }
+        
+    }
     
     &__slide {
         border-left: 1px solid #E0E0E0;
@@ -1010,7 +974,7 @@
 
     .form {
         position: relative;
-        height: 54.7rem;
+        height: 55.7rem;
         margin-bottom: 18rem;
 
         &__form {
@@ -1018,35 +982,32 @@
         }
 
         &__inner {
-            width: 165.4rem;
-            height: 54.7rem;
-            background: #FFFFFF;
-            border-radius: 6rem 0px 0px 6rem;
-
-            padding: 2.2rem 21rem 4rem 2rem;
+            height: 56rem;
             display: flex;
             align-items: center;
             justify-content: flex-end;
 
-
-            position: absolute;
-            right: 0;
+            &::after {
+                content: "";
+                width: 165.4rem;
+                height: 54.7rem;
+                background: #FFFFFF;
+                border-radius: 6rem 0px 0px 6rem;
+                position: absolute;
+                right: 0;
+                z-index: -1;
+            }
         }
+
         
         &__substrate {
-
             width: 89.4rem;
             height: 67rem;
+            object-fit: contain;
 
             position: absolute;
-            left: -15.5%;
-            top: -13%;
-
-                img {
-                    height: 100%;
-                    object-fit:contain;
-                }
-
+            top: -6rem;
+            left: 0;
         }
         
         
@@ -1060,7 +1021,7 @@
             font-size: 4rem;
             font-weight: 700;
             color: rgba(41, 45, 50, 1);
-            margin-bottom: 2rem;
+            margin-bottom: 1.4rem;
         }
         
         &__subtitle {

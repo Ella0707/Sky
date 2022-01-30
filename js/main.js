@@ -2,6 +2,8 @@ let reviewSlider = new Swiper('.reviews__content', {
     slidesPerView: 1.5,
     speed: 800,
     spaceBetween: 53,
+    loop: true,
+
   
     navigation: {
         nextEl: '.reviews__control-arrow-next',
@@ -32,6 +34,7 @@ let reviewSlider = new Swiper('.reviews__content', {
         769: {
           slidesPerView: 3,
           spaceBetween: 71,
+          loop: false,
         }
     }
 });
@@ -83,7 +86,7 @@ $('.header__burger-menu').on('click', function (e) {
 });
 
 
-$(".header__menu-item").click(function(e) {
+$(".menu-item-open").click(function(e) {
   e.preventDefault();
   $(this).toggleClass('active');
   $(".header__menu-sub-list").toggleClass('active');
