@@ -1,12 +1,16 @@
 .header {
     position: relative;
-    padding-top: 5rem;
+    // padding-top: 5rem;
 
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        position: absolute;
+        width: 150rem;
+        padding-top: 5rem;
+        // z-index: 9;
     }
 
     &__logo-wrap {
@@ -211,6 +215,7 @@
 
     &__location-wrap {
         display: flex;
+        align-items: center;
         margin-bottom: 0.6rem;
     }
 
@@ -251,15 +256,8 @@
         font-size: 2rem;
         font-weight: 400;
         color: #ffffff;
-    }
-}
-
-
-.service {
-    position: relative;
-    padding-top: 29rem;
-    padding-bottom: 18rem;
-
+    } 
+    
     &__about-block {
         width: 110rem;
         background: #FFFFFF;
@@ -268,7 +266,7 @@
         display: flex;
 
         position: absolute;
-        top: -27.5rem;
+        bottom: 29rem;
         right: 0;
     }
 
@@ -279,7 +277,7 @@
         height: 100%;
         width: 50%;
 
-        padding: 6.4rem 3rem 7.5rem 7rem;
+        padding: 6.4rem 3rem 7rem 7rem;
     }
 
     &__about-left-text {
@@ -340,6 +338,14 @@
     }
 
 
+}
+
+
+.service {
+    position: relative;
+    padding-top: 29rem;
+    padding-bottom: 18rem;
+
     &__top-wrap {
         display: flex;
         align-items: center;
@@ -370,16 +376,16 @@
         height: 44.1rem;
         border-radius: 0 6rem 0 6rem;
 
-        display: flex;
-        align-items: flex-end;
+        // display: flex;
+        // align-items: flex-end;
 
         position: relative;
     }
 
     &__block-img {
-        position: absolute;
-        top: 0;
-        left: 0;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
         border-radius: 0 6rem 0 0;
         height: 35rem;
 
@@ -391,13 +397,15 @@
 
     &__block-text {
         width: 61rem;
-        height: 18.1rem;
+        // height: 18.1rem;
         background-color: #ffffff;
         border-radius: 0px 4.5rem;
         padding: 4.5rem 6.4rem 2.8rem 4rem;
         line-height: 1.25;
 
-        position: relative;
+        position: absolute;
+        bottom: 0;
+        left: 0;
         z-index: 1;
     }
 
@@ -423,7 +431,7 @@
 
     &__block-arrow {
         position: absolute;
-        width: 2rem;
+        width: 2.5rem;
         height: 1.5rem;
         right: 4rem;
         top: 2.85rem;
@@ -483,9 +491,9 @@
 
     &__box {
         width: 25%;
-        height: 32rem;
+        // height: 32rem;
         border: 1px solid #E0E0E0;
-        padding: 5rem 4.5rem 4.5rem 4rem;
+        padding: 5rem 4.5rem 5.5rem 4rem;
 
         &:first-child {
             border-radius: 6rem 0 0 0;
@@ -539,7 +547,7 @@
 
 
 .choose {
-    margin-bottom: 15.2rem;
+    margin-bottom: 16.2rem;
 
     &__top-wrap {
         display: flex;
@@ -568,7 +576,7 @@
 
     &__box {
         width: 45rem;
-        height: 32rem;
+        height: 31.7rem;
         border-radius: 0 4.5rem 0 4.5rem;
 
         display: flex;
@@ -589,8 +597,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 24rem;
         border-radius: 4.5rem 0rem 0 0rem;
+        object-fit: cover;
     }
 
     &__box-num-wrap {
@@ -620,9 +628,8 @@
     }
 
     &__box-bottom {
-        height: 12.4rem;
         position: relative;
-        padding: 2rem 3rem;
+        padding: 2rem 3rem 2.7rem 3rem;
         z-index: 2;
     }
 
@@ -656,7 +663,7 @@
         font-size: 1.5rem;
         font-weight: 300;
         color: rgba(41, 45, 50, 1);
-        width: 80%;
+        width: 90%;
         padding-right: 1.5rem;
     }
 
@@ -703,7 +710,7 @@
 
     &__slide {
         height: 43.9rem;
-        padding: 1rem;
+        padding: 0.5rem 1rem 1rem 1rem;
 
         position: relative;
     }
@@ -756,7 +763,8 @@
         }
 
         position: absolute;
-        right: 3rem;
+        right: 0;
+        transform: translateX(-50%);
         bottom: 5rem;
     }
 
@@ -835,10 +843,22 @@
 
 
 
-.form {
+.feedback {
     position: relative;
     height: 55.7rem;
     margin-bottom: 18rem;
+
+    &::before {
+        content: "";
+        width: 165.4rem;
+        height: 54.7rem;
+        background: #FFFFFF;
+        border-radius: 6rem 0px 0px 6rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
 
     &__form {
         width: 89rem;
@@ -849,17 +869,6 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-
-        &::after {
-            content: "";
-            width: 165.4rem;
-            height: 54.7rem;
-            background: #FFFFFF;
-            border-radius: 6rem 0px 0px 6rem;
-            position: absolute;
-            right: 0;
-            z-index: -1;
-        }
     }
 
     &__substrate {

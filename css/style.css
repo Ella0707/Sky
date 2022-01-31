@@ -375,7 +375,7 @@ input[type=number] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 7.1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .control__arrow-prew {
   width: 2.4rem;
@@ -479,7 +479,6 @@ input[type=number] {
 }
 .header {
   position: relative;
-  padding-top: 5rem;
 }
 .header__inner {
   display: -webkit-box;
@@ -492,6 +491,9 @@ input[type=number] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  position: absolute;
+  width: 150rem;
+  padding-top: 5rem;
 }
 .header__logo-wrap {
   display: -webkit-box;
@@ -694,6 +696,9 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 0.6rem;
 }
 .banner__loc-img {
@@ -729,13 +734,7 @@ input[type=number] {
   font-weight: 400;
   color: #ffffff;
 }
-
-.service {
-  position: relative;
-  padding-top: 29rem;
-  padding-bottom: 18rem;
-}
-.service__about-block {
+.banner__about-block {
   width: 110rem;
   background: #FFFFFF;
   border-radius: 0px 0px 0px 6rem;
@@ -743,10 +742,10 @@ input[type=number] {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: -27.5rem;
+  bottom: 29rem;
   right: 0;
 }
-.service__about-left {
+.banner__about-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -759,25 +758,25 @@ input[type=number] {
           justify-content: space-between;
   height: 100%;
   width: 50%;
-  padding: 6.4rem 3rem 7.5rem 7rem;
+  padding: 6.4rem 3rem 7rem 7rem;
 }
-.service__about-left-text {
+.banner__about-left-text {
   font-size: 1.7rem;
   font-weight: 600;
   color: #160B15;
   margin-bottom: 4rem;
 }
-.service__about-left-title {
+.banner__about-left-title {
   font-size: 3rem;
   margin-bottom: 2.6rem;
 }
-.service__about-left-item {
+.banner__about-left-item {
   position: relative;
   padding-left: 2.5rem;
   line-height: 1.6;
   letter-spacing: 0.9px;
 }
-.service__about-left-item::before {
+.banner__about-left-item::before {
   content: "✔";
   width: 1.7rem;
   height: 1.7rem;
@@ -785,7 +784,7 @@ input[type=number] {
   left: 0rem;
   top: 0rem;
 }
-.service__about-right {
+.banner__about-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -796,7 +795,7 @@ input[type=number] {
   width: 50%;
   position: relative;
 }
-.service__about-right-substr {
+.banner__about-right-substr {
   position: absolute;
   top: 0;
   left: 0;
@@ -804,7 +803,7 @@ input[type=number] {
   right: 0;
   height: 100%;
 }
-.service__about-right-title {
+.banner__about-right-title {
   font-size: 2.7rem;
   font-weight: 600;
   color: #160B15;
@@ -812,6 +811,12 @@ input[type=number] {
   position: relative;
   z-index: 1;
   width: 27rem;
+}
+
+.service {
+  position: relative;
+  padding-top: 29rem;
+  padding-bottom: 18rem;
 }
 .service__top-wrap {
   display: -webkit-box;
@@ -847,18 +852,9 @@ input[type=number] {
   width: 70rem;
   height: 44.1rem;
   border-radius: 0 6rem 0 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   position: relative;
 }
 .service__block-img {
-  position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 0 6rem 0 0;
   height: 35rem;
 }
@@ -869,12 +865,13 @@ input[type=number] {
 }
 .service__block-text {
   width: 61rem;
-  height: 18.1rem;
   background-color: #ffffff;
   border-radius: 0px 4.5rem;
   padding: 4.5rem 6.4rem 2.8rem 4rem;
   line-height: 1.25;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   z-index: 1;
 }
 .service__block-icon {
@@ -903,7 +900,7 @@ input[type=number] {
 }
 .service__block-arrow {
   position: absolute;
-  width: 2rem;
+  width: 2.5rem;
   height: 1.5rem;
   right: 4rem;
   top: 2.85rem;
@@ -961,9 +958,8 @@ input[type=number] {
 }
 .work__box {
   width: 25%;
-  height: 32rem;
   border: 1px solid #E0E0E0;
-  padding: 5rem 4.5rem 4.5rem 4rem;
+  padding: 5rem 4.5rem 5.5rem 4rem;
 }
 .work__box:first-child {
   border-radius: 6rem 0 0 0;
@@ -1012,7 +1008,7 @@ input[type=number] {
 }
 
 .choose {
-  margin-bottom: 15.2rem;
+  margin-bottom: 16.2rem;
 }
 .choose__top-wrap {
   display: -webkit-box;
@@ -1045,7 +1041,7 @@ input[type=number] {
 }
 .choose__box {
   width: 45rem;
-  height: 32rem;
+  height: 31.7rem;
   border-radius: 0 4.5rem 0 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1065,8 +1061,9 @@ input[type=number] {
   position: absolute;
   top: 0;
   left: 0;
-  height: 24rem;
   border-radius: 4.5rem 0rem 0 0rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .choose__box-num-wrap {
   width: 4.4rem;
@@ -1091,9 +1088,8 @@ input[type=number] {
   color: #292d32;
 }
 .choose__box-bottom {
-  height: 12.4rem;
   position: relative;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 2.7rem 3rem;
   z-index: 2;
 }
 .choose__box-text-substrate {
@@ -1128,7 +1124,7 @@ input[type=number] {
   font-size: 1.5rem;
   font-weight: 300;
   color: #292d32;
-  width: 80%;
+  width: 90%;
   padding-right: 1.5rem;
 }
 .choose__box-text-img {
@@ -1173,7 +1169,7 @@ input[type=number] {
 }
 .reviews__slide {
   height: 43.9rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem 1rem 1rem;
   position: relative;
 }
 .reviews__slide-substrate {
@@ -1222,7 +1218,9 @@ input[type=number] {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  right: 3rem;
+  right: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 5rem;
 }
 .reviews__slide-more img {
@@ -1310,15 +1308,26 @@ input[type=number] {
   color: #292D32;
 }
 
-.form {
+.feedback {
   position: relative;
   height: 55.7rem;
   margin-bottom: 18rem;
 }
-.form__form {
+.feedback::before {
+  content: "";
+  width: 165.4rem;
+  height: 54.7rem;
+  background: #FFFFFF;
+  border-radius: 6rem 0px 0px 6rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.feedback__form {
   width: 89rem;
 }
-.form__inner {
+.feedback__inner {
   height: 56rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1330,17 +1339,7 @@ input[type=number] {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.form__inner::after {
-  content: "";
-  width: 165.4rem;
-  height: 54.7rem;
-  background: #FFFFFF;
-  border-radius: 6rem 0px 0px 6rem;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-}
-.form__substrate {
+.feedback__substrate {
   width: 89.4rem;
   height: 67rem;
   -o-object-fit: contain;
@@ -1349,31 +1348,31 @@ input[type=number] {
   top: -6rem;
   left: 0;
 }
-.form__title-wrap {
+.feedback__title-wrap {
   margin-bottom: 3rem;
   width: 100%;
 }
-.form__title {
+.feedback__title {
   font-size: 4rem;
   font-weight: 700;
   color: #292d32;
   margin-bottom: 1.4rem;
 }
-.form__subtitle {
+.feedback__subtitle {
   font-size: 1.8rem;
   font-weight: 300;
   color: #292d32;
 }
-.form__body {
+.feedback__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-.form__information {
+.feedback__information {
   width: 100%;
 }
-.form__information-personal {
+.feedback__information-personal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1385,7 +1384,7 @@ input[type=number] {
           justify-content: space-between;
   margin-bottom: 1.5rem;
 }
-.form__input-wrap {
+.feedback__input-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1397,13 +1396,13 @@ input[type=number] {
   padding-bottom: 1rem;
   border-bottom: 1.5px solid #D6D6D6;
 }
-.form__input-wrap:focus-within {
+.feedback__input-wrap:focus-within {
   border-bottom: 1.5px solid #06A4D9;
 }
-.form__input-wrap:focus-within .form__input-img {
+.feedback__input-wrap:focus-within .form__input-img {
   stroke: #06A4D9;
 }
-.form__input-img {
+.feedback__input-img {
   width: 2.4rem;
   height: 2.4rem;
   stroke: #292D32;
@@ -1412,38 +1411,38 @@ input[type=number] {
       -ms-flex-positive: 0;
           flex-grow: 0;
 }
-.form__input {
+.feedback__input {
   width: 23rem;
   font-size: 1.8rem;
   font-weight: 300;
   color: #292D32;
 }
-.form__input::-webkit-input-placeholder {
+.feedback__input::-webkit-input-placeholder {
   font-size: 1.8rem;
   font-weight: 300;
   color: #292D32;
 }
-.form__input::-moz-placeholder {
+.feedback__input::-moz-placeholder {
   font-size: 1.8rem;
   font-weight: 300;
   color: #292D32;
 }
-.form__input:-ms-input-placeholder {
+.feedback__input:-ms-input-placeholder {
   font-size: 1.8rem;
   font-weight: 300;
   color: #292D32;
 }
-.form__input::-ms-input-placeholder {
+.feedback__input::-ms-input-placeholder {
   font-size: 1.8rem;
   font-weight: 300;
   color: #292D32;
 }
-.form__input::placeholder {
+.feedback__input::placeholder {
   font-size: 1.8rem;
   font-weight: 300;
   color: #292D32;
 }
-.form__select-label {
+.feedback__select-label {
   font-size: 1.6rem;
   font-weight: 300;
   color: #292d32;
@@ -1457,14 +1456,14 @@ input[type=number] {
           align-items: center;
   cursor: pointer;
 }
-.form__checkbox-input {
+.feedback__checkbox-input {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-.form__checkbox-input:checked + .form__checkbox-style::before {
+.feedback__checkbox-input:checked + .form__checkbox-style::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1480,7 +1479,7 @@ input[type=number] {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.form__checkbox-style {
+.feedback__checkbox-style {
   position: absolute;
   width: 2rem;
   height: 2rem;
@@ -1488,7 +1487,7 @@ input[type=number] {
   border: 1px solid #C0C0C0;
   margin-left: -3.5rem;
 }
-.form__btn {
+.feedback__btn {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
