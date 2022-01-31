@@ -1,0 +1,256 @@
+.header--dark {
+
+    .header__logo-name-top {
+        color: #292D32;
+    }
+
+    .header__logo-name-down {
+        color: #292D32;
+    }
+
+    .header__menu-link {
+        color: #292D32;
+    }
+
+    .header__tel {
+        color: #292D32;
+    }
+
+    .header__tel-down {
+        color: #292D32;
+    }
+
+    .header__menu-item {
+
+
+        &:not(:nth-child(n+5)) {
+            &:before {
+                content: "";
+                background-image: url(./../img/menu-arrow-dark.svg);
+            }
+        }
+
+        @media (min-width: 48em) {
+            &:hover {
+                &::before {
+                    background-image: url(./../img/arrow-top.svg);
+                }
+            }
+        }
+    }
+}
+
+
+.banner--dark {
+
+    .banner {
+        &__inner {
+            padding-top: 9rem;
+        }
+
+       &__location-sity {
+        
+            color: #292D32;
+        }
+    
+       &__title-wrap {
+            color: #292D32;
+        }
+    
+       &__subtitle {
+            color: #292D32;
+        }
+    }
+
+   
+}
+
+
+
+.contacts-block {
+
+    width: 150rem;
+    height: 31rem;
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+   
+
+    &__inner {
+        background-color: #ffffff;
+        border-radius: 0rem 6rem;
+        padding: 6.5rem 5rem 7rem 7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    &__block {
+
+        &.support {
+            width: 41.7rem;
+
+            .contacts-block__information-title-wrap {
+                svg {
+                    stroke: #06A4D9;
+                }
+            }
+        }
+
+        &.sale {
+            width: 43.3rem;
+            .contacts-block__information-title-wrap {
+                svg {
+                    stroke: #C81F41;
+                }
+            }
+        }
+
+        &.address {
+            width: 28.4rem;
+            .contacts-block__information-title-wrap {
+                svg {
+                    stroke: #EF4023;
+                }
+            }
+
+            .contacts-block__information-value {
+                line-height: 1.4;
+            }
+        }
+
+        &:not(:last-child) {
+            position: relative;
+            &::after {
+                content: "";
+                width: 0.1rem;
+                height: 23rem;
+                background-color: #E0E0E0;
+    
+                position: absolute;
+                right: -15%;
+                top: -4rem;
+            }
+        }
+    }
+    
+    
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #160B15;
+        margin-bottom: 2.5rem;
+    }
+
+    &__infotmation-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 0.5;
+    }
+    
+    &__infotmation {
+        &:nth-child(1) {
+            margin-right: 3rem;
+            margin-bottom: 2.7rem;
+        }
+    }
+    
+    &__information-title-wrap {
+            display: flex;
+            align-items: center;
+
+            svg {
+                stroke: #06A4D9;
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-right: 1rem;
+            }
+
+            span {
+                font-size: 1.6rem;
+                font-weight: 300;
+                color: #160B15;
+            }
+    }
+    
+    &__information-value {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #160B15;
+        padding-left: 3.4rem;
+        display: inline-flex;
+
+    }
+}
+
+
+.map {
+
+    .container {
+        padding: 0;
+    }
+    &__map {
+        width: 100%;
+        height: 55rem;
+        margin-top: -80rem;
+       
+    }
+
+    .ymaps-2-1-79-map {
+        filter: grayscale(1);
+    }
+}
+
+
+
+.form {
+
+    &.page-contacts {
+            height: 62rem;
+            margin-bottom: 0rem;
+
+        .form {
+            &__inner {
+                height: 58rem;
+
+                &::after {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0rem 0px 0px 0rem;
+                    position: absolute;
+                    right: 0;
+                    z-index: -1;
+                }
+            }
+
+            &__information-personal {
+                display: block;
+            }
+
+            &__information-personal-top {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &__bottom-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            &__input {
+                width: 27rem;
+
+                &.comment {
+                    width: 89rem;
+                }
+            }
+        }
+
+    }
+}

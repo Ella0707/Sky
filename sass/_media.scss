@@ -86,6 +86,7 @@
                 transform: translateY(0);
                 z-index: 10;
                 overflow-y: auto;
+                padding-bottom: 20rem;
             }
         }
 
@@ -258,6 +259,7 @@
             width: 71rem;
             background: #FFFFFF;
             border-radius: 0;
+            overflow: hidden;
 
             flex-direction: column;
 
@@ -325,10 +327,12 @@
 
             &.three {
                 grid-area: three;
+                width: 32rem;
             }
 
             &.four {
                 grid-area: four;
+                width: 32rem;
             }
         }
 
