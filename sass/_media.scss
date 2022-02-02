@@ -15,20 +15,10 @@
 
 
     .header {
-        padding-top: 5.7rem;
-        transition: 0.8s;
-
-        &.active {
-            background: #212129;
-            padding-bottom: 5rem;
-        }
 
         &__inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            padding: 0 1rem;
+            width: 68rem;
+            padding-top: 6rem;
         }
 
         &__logo-wrap {
@@ -70,24 +60,39 @@
         &__menu {
             width: 100%;
             position: absolute;
-            top: 13rem;
+            top: 0;
             bottom: 0;
             right: 0;
             left: 0;
             height: 100vh;
-            transform: translateY(-100%);
+            width: 100vw;
+            transform: translateX(-100%);
+            padding: 6rem 10rem 20rem 10rem;
             transition: 0.8s;
             background: #212129;
-            padding: 10rem;
             opacity: 0;
 
             &.active {
                 opacity: 1;
-                transform: translateY(0);
+                transform: translateX(-3rem);
                 z-index: 10;
                 overflow-y: auto;
-                padding-bottom: 20rem;
+
+                .header__mobile-header {
+                    display: flex;
+                }
             }
+        }
+
+        &__mobile-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 53.5rem;
+            margin-bottom: 10rem;
+            margin-left: 7.4rem;
+
+            display: none;
         }
 
         &__menu-list {
@@ -130,12 +135,10 @@
                 &:not(:last-child) {
                     margin-bottom: 1.3rem;
                 }
-
                 
                 &::before {
                     transform: rotateX(180deg);
                 }
-            
             }
         }
 
@@ -186,11 +189,10 @@
     }
 
 
-
-
     .banner {
 
-        height: 75rem;
+        height: 107.4rem;
+        margin-bottom: 73.5rem;
 
         &__background {
             position: absolute;
@@ -203,7 +205,7 @@
 
 
         &__inner {
-            padding-top: 10.5rem;
+            padding-top: 13.5rem;
             padding-bottom: 2rem;
         }
 
@@ -236,7 +238,7 @@
 
         &__title {
             font-size: 5.4rem;
-            margin-bottom: 3.8rem;
+            margin-bottom: 4rem;
             line-height: 1.268;
             width: 88%;
         }
@@ -245,15 +247,6 @@
             font-size: 3rem;
             width: 53%;
         }
-    }
-
-
-
-
-    .service {
-        padding-top: 93rem;
-        padding-left: 1rem;
-        padding-bottom: 18rem;
 
         &__about-block {
             width: 71rem;
@@ -264,7 +257,7 @@
             flex-direction: column;
 
             position: absolute;
-            top: -6rem;
+            bottom: -60rem;
             right: 0;
         }
 
@@ -344,7 +337,10 @@
             display: flex;
             align-items: center;
             padding-left: 7rem;
-            padding-top: 12.6rem;
+            padding-top: 2.6rem;
+            padding-bottom: 2rem;
+            padding-right: 2rem;
+            height: 39rem;
             width: 100%;
 
             position: relative;
@@ -357,6 +353,11 @@
             width: 36rem;
         }
 
+    }
+
+    .service {
+        padding-left: 1rem;
+        margin-bottom: 18rem;
 
         &__top-wrap {
             flex-direction: column;
@@ -370,7 +371,6 @@
         &__title-wrap {
             width: 100%;
             margin-bottom: 3rem;
-
         }
 
         &__title {
@@ -519,9 +519,6 @@
             font-size: 3rem;
         }
     }
-
-
-
 
     .choose {
         margin-bottom: 21.2rem;
@@ -730,7 +727,7 @@
                 height: 3.84rem;
             }
 
-            right: -4rem;
+            right: -8rem;
             bottom: 6rem;
         }
 
@@ -793,7 +790,7 @@
 
 
 
-    .form {
+    .feedback {
         position: relative;
         height: 125.7rem;
         margin-bottom: 4rem;
@@ -901,20 +898,10 @@
 
         &__checkbox-input {
 
-            &:checked+.form__checkbox-style::before {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 50%;
+            &:checked+.feedback__checkbox-style::before {
                 width: 3.8rem;
                 height: 3.8rem;
-                border: 0.15rem solid #06A4D9;
-                border-radius: 0.3rem;
-                background-image: url(./../img/check.svg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 1.5rem;
-                transform: translate(-50%, -50%);
+                background-size: 2rem;
             }
         }
 
@@ -1116,9 +1103,9 @@
                 margin-right: 3.2rem;
             }
 
-            img {
-                height: 100%;
-                object-fit: contain;
+            svg {
+                width: 7.5rem;
+                height: 7.5rem;
             }
         }
 
@@ -1133,8 +1120,8 @@
         }
 
         &__small {
-
             &:not(:last-child) {
+
                 &::after {
                     content: "";
                     width: 0;

@@ -2,9 +2,8 @@ let reviewSlider = new Swiper('.reviews__content', {
     slidesPerView: 1.5,
     speed: 800,
     spaceBetween: 53,
-    loop: true,
+    slidesOffsetAfter: 30,
 
-  
     navigation: {
         nextEl: '.reviews__control-arrow-next',
         prevEl: '.reviews__control-arrow-prew',
@@ -34,7 +33,6 @@ let reviewSlider = new Swiper('.reviews__content', {
         769: {
           slidesPerView: 3,
           spaceBetween: 71,
-          loop: false,
         }
     }
 });

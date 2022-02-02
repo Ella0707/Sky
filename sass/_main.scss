@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    // padding-top: 5rem;
+    z-index: 1;
 
     &__inner {
         display: flex;
@@ -10,7 +10,6 @@
         position: absolute;
         width: 150rem;
         padding-top: 5rem;
-        // z-index: 9;
     }
 
     &__logo-wrap {
@@ -189,7 +188,10 @@
 
 .banner {
 
-    height: 75rem;
+    height: 84.1rem;
+    position: relative;
+    padding-top: 9.5rem;
+    margin-bottom: 29rem;
 
     &__background {
         position: absolute;
@@ -266,7 +268,7 @@
         display: flex;
 
         position: absolute;
-        bottom: 29rem;
+        bottom: -13.5rem;
         right: 0;
     }
 
@@ -343,8 +345,7 @@
 
 .service {
     position: relative;
-    padding-top: 29rem;
-    padding-bottom: 18rem;
+    margin-bottom: 17rem;
 
     &__top-wrap {
         display: flex;
@@ -359,7 +360,7 @@
     }
 
     &__title {
-        margin-bottom: 1.2rem;
+        margin-bottom: 2rem;
     }
 
     &__top-btn {
@@ -463,7 +464,7 @@
     background: #ffffff;
     padding-top: 16.5rem;
     padding-bottom: 18rem;
-    margin-bottom: 16.5rem;
+    margin-bottom: 16rem;
 
     &__top-wrap {
         display: flex;
@@ -478,7 +479,7 @@
     }
 
     &__title {
-        margin-bottom: 1.2rem;
+        margin-bottom: 2rem;
     }
 
     &__top-btn {
@@ -865,7 +866,7 @@
     }
 
     &__inner {
-        height: 56rem;
+        height: 55rem;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -926,7 +927,7 @@
         &:focus-within {
             border-bottom: 1.5px solid #06A4D9;
 
-            .form__input-img {
+            .feedback__input-img {
                 stroke: #06A4D9;
             }
         }
@@ -972,7 +973,7 @@
         overflow: hidden;
         clip: rect(0 0 0 0);
 
-        &:checked+.form__checkbox-style::before {
+        &:checked+.feedback__checkbox-style::before {
             content: "";
             position: absolute;
             top: 50%;
@@ -984,7 +985,7 @@
             background-image: url(./../img/check.svg);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 1.2rem;
+            background-size: 1.25rem;
             transform: translate(-50%, -50%);
         }
     }
@@ -1024,6 +1025,7 @@
 
     &__logo-wrap {
         margin-bottom: 5rem;
+        display: block;
     }
 
     &__logo-img {
@@ -1088,6 +1090,10 @@
 
         &:not(:last-child) {
             margin-bottom: 1.64rem;
+        }
+
+        &:hover {
+            color: #FAAA3D;
         }
     }
 
@@ -1157,9 +1163,14 @@
             margin-right: 3rem;
         }
 
-        img {
-            height: 100%;
-            object-fit: contain;
+        svg {
+            height: 3.7rem;
+            width: 3.7rem;
+            stroke: #ffffff;
+
+            &:hover {
+                stroke: #FAAA3D;
+            }
         }
     }
 
@@ -1175,6 +1186,10 @@
 
         a {
             border-bottom: 1px solid #ffffff;
+
+            &:hover {
+                color: #FAAA3D;
+            }
         }
     }
 
