@@ -87,6 +87,6 @@ $('.header__burger-menu').on('click', function (e) {
 $(".menu-item-open").click(function(e) {
   e.preventDefault();
   $(this).toggleClass('active');
-  $(".header__menu-sub-list").toggleClass('active');
+  $(this).next(".header__menu-sub-list").toggleClass('active');
 })
 

@@ -159,6 +159,10 @@
 
             position: static;
             display: none;
+
+            &.active {
+                display: block;
+            }
         }
 
         &__menu-sub-item {
