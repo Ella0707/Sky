@@ -90,3 +90,60 @@ $(".menu-item-open").click(function(e) {
   $(this).next(".header__menu-sub-list").toggleClass('active');
 })
 
+
+
+
+const seeAlsoSlider = new Swiper('.seeAlso__slider', {
+  direction: 'horizontal',
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+
+  pagination: {
+      el: '.seeAlso__pagination',
+      type: 'fraction',
+      formatFractionCurrent: function (number) {
+          if (number < 10) {
+              return ('0' + number);
+          } else {
+              return number;
+          }
+      },
+      formatFractionTotal: function (number) {
+          if (number < 10) {
+              return ('0' + number);
+          } else {
+              return number;
+          }
+      },
+  },
+
+  navigation: {
+      nextEl: '.seeAlso__paginationArrow--right',
+      prevEl: '.seeAlso__paginationArrow--left',
+  },
+
+  breakpoints: {
+      2880: {
+          spaceBetween: 90,
+      },
+      1920: {
+          spaceBetween: 60,
+      },
+      1440: {
+          spaceBetween: 50,
+      },
+      768: {
+          spaceBetween: 40,
+      },
+      600: {
+          spaceBetween: 30,
+          slidesPerView: 1.5,
+          slidesPerGroup: 1,
+      },
+      0: {
+          spaceBetween: 20,
+          slidesPerView: 1.5,
+          slidesPerGroup: 1,
+      }
+  },
+});

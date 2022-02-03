@@ -42,7 +42,7 @@
 
 
 .banner.banner--dark {
-    height: 56rem;
+    height: 60rem;
     margin-bottom: 0;
 
         .banner {
@@ -68,35 +68,31 @@
 
 .banner--dark {
 
-  
+
 }
-
-
-   
-
 
 
 .contacts-block {
 
     width: 150rem;
-    height: 31rem;
     position: absolute;
-    bottom: -50%;
+    bottom: -14.5rem;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    transform: translateX(-50%);
+    // z-index: 2;
    
 
     &__inner {
         background-color: #ffffff;
         border-radius: 0rem 6rem;
-        padding: 6.5rem 5rem 7rem 7rem;
+        padding: 6.5rem 5rem 8rem 7rem;
         display: flex;
         justify-content: space-between;
     }
 
     
     &__block {
+        height: 100%;
 
         &.support {
             width: 41.7rem;
@@ -198,6 +194,8 @@
 .map {
     height: 55rem;
     width: 100%;
+    position: relative;
+    z-index: -1;
 
     &__map {
         width: 100%;
@@ -211,31 +209,48 @@
 }
 
 
-.page-contacts {
+.feedback.page-contacts {
+    height: 62rem;
+    margin-bottom: 0rem;
+    padding-top: 1.2rem;
+    &::before {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
 
-    &.feedback {
-        height: 62rem;
-        margin-bottom: 0rem;
-
-        &::before {
-            width: 100%;
-            height: 100%;
-            border-radius: 0;
+    .feedback {
+        &__substrate {
+            top: -3rem;
+            left: 1rem;
         }
 
         &__inner {
-            height: 58rem;
+            padding-top: 11.5rem;
         }
 
         &__information-personal {
-            display: block;
+            margin-bottom: 3.5rem;
+           
         }
 
-        &__information-personal-top {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            justify-content: space-between;
+        &__information {
+            margin-bottom: 3.5rem;
+        }
+
+        // &__information-personal-top {
+        //     display: flex;
+        //     width: 100%;
+        //     align-items: center;
+        //     justify-content: space-between;
+        // }
+
+        &__input-wrap {
+            width: 27rem;
+
+            &.comment {
+                width: 100%;
+            }
         }
 
         &__bottom-wrap {

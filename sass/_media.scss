@@ -57,6 +57,33 @@
             }
         }
 
+        &.header--dark {
+
+            .header__burger-menu {
+                background-image: url(./../img/burger-dark.svg);
+
+                &.active {
+                    background-image: url(./../img/close.svg);
+                }
+            }
+
+
+            // .header__logo-name-top {
+            //     color: #ffffff;
+            // }
+
+            // .header__logo-name-down {
+            //     color: #ffffff;
+            // }
+
+            .header__menu-link {
+                color: #ffffff;
+            }
+
+        }
+
+
+
         &__menu {
             width: 100%;
             position: absolute;
@@ -93,6 +120,15 @@
             margin-left: 7.4rem;
 
             display: none;
+
+            
+            .header__logo-name-top {
+                color: #ffffff;
+            }
+
+            .header__logo-name-down {
+                color: #ffffff;
+            }
         }
 
         &__menu-list {
@@ -135,7 +171,7 @@
                 &:not(:last-child) {
                     margin-bottom: 1.3rem;
                 }
-                
+
                 &::before {
                     transform: rotateX(180deg);
                 }
@@ -1140,4 +1176,240 @@
             }
         }
     }
+
+
+
+
+
+    .banner.banner--dark {
+        height: 120rem;
+        margin-bottom: 0;
+    
+            .banner {
+           
+            &__inner {
+                padding-top: 9rem;
+            }
+    
+            &__location-sity {
+    
+                color: #292D32;
+            }
+    
+            &__title-wrap {
+                color: #292D32;
+            }
+    
+            &__subtitle {
+                color: #292D32;
+            }
+        }
+    }
+    
+    .banner--dark {
+    
+    
+    }
+    
+    
+    .contacts-block {
+    
+        width: 67rem;
+        position: absolute;
+        bottom: -14.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        // z-index: 2;
+       
+    
+        &__inner {
+            background-color: #ffffff;
+            border-radius: 0rem 6rem;
+            padding: 13rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    
+        
+        &__block {
+            height: 100%;
+    
+            &.support {
+                width: 41.7rem;
+    
+                .contacts-block__information-title-wrap {
+                    svg {
+                        stroke: #06A4D9;
+                    }
+                }
+            }
+    
+            &.sale {
+                width: 43.3rem;
+                .contacts-block__information-title-wrap {
+                    svg {
+                        stroke: #C81F41;
+                    }
+                }
+            }
+    
+            &.address {
+                width: 28.4rem;
+                .contacts-block__information-title-wrap {
+                    svg {
+                        stroke: #EF4023;
+                    }
+                }
+    
+                .contacts-block__information-value {
+                    line-height: 1.4;
+                }
+            }
+    
+            &:not(:last-child) {
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 0.1rem;
+                    height: 23rem;
+                    background-color: #E0E0E0;
+        
+                    position: absolute;
+                    right: -15%;
+                    top: -4rem;
+                }
+            }
+        }
+        
+        
+        &__title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #160B15;
+            margin-bottom: 2.5rem;
+        }
+    
+        &__infotmation-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 0.5;
+        }
+        
+        &__infotmation {
+            &:nth-child(1) {
+                margin-right: 3rem;
+                margin-bottom: 2.7rem;
+            }
+        }
+        
+        &__information-title-wrap {
+                display: flex;
+                align-items: center;
+    
+                svg {
+                    stroke: #06A4D9;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    margin-right: 1rem;
+                }
+    
+                span {
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                    color: #160B15;
+                }
+        }
+        
+        &__information-value {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #160B15;
+            padding-left: 3.4rem;
+            display: inline-flex;
+    
+        }
+    }
+    
+    
+    .map {
+        height: 55rem;
+        width: 100%;
+        position: relative;
+        z-index: -1;
+    
+        &__map {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .ymaps-2-1-79-ground-pane {
+            filter: grayscale(1);
+        }
+        
+    }
+    
+    
+    .feedback.page-contacts {
+        height: 62rem;
+        margin-bottom: 0rem;
+        padding-top: 1.2rem;
+        &::before {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+    
+        .feedback {
+            &__substrate {
+                top: -3rem;
+                left: 1rem;
+            }
+    
+            &__inner {
+                padding-top: 11.5rem;
+            }
+    
+            &__information-personal {
+                margin-bottom: 3.5rem;
+               
+            }
+    
+            &__information {
+                margin-bottom: 3.5rem;
+            }
+    
+            // &__information-personal-top {
+            //     display: flex;
+            //     width: 100%;
+            //     align-items: center;
+            //     justify-content: space-between;
+            // }
+    
+            &__input-wrap {
+                width: 27rem;
+    
+                &.comment {
+                    width: 100%;
+                }
+            }
+    
+            &__bottom-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+    
+            &__input {
+                width: 27rem;
+    
+                &.comment {
+                    width: 89rem;
+                }
+            }
+        }
+    }
+    
+    
 }

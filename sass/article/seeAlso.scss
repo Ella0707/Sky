@@ -1,0 +1,162 @@
+.seeAlso {
+  &__titleBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
+  &__titleBlockText {
+    display: flex;
+    flex-direction: column;
+    
+    > span {
+      display: block;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 5.1rem;
+    color: #292D32;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.3rem;
+  }
+
+  &__paginationBlock {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 34rem;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.3);
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      display: block;
+      width: 5.6rem;
+      height: 2px;
+      background-color: #06A4D9;
+    }
+  }
+
+  &__pagination {
+    flex: 1;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #777;
+
+    > .swiper-pagination-current {
+      margin-right: 0.7rem;
+      font-size: 4rem;
+      line-height: 5.1rem;
+      color: #292D32;
+    }
+
+    > .swiper-pagination-total {
+      margin-left: 0.7rem;
+    }
+  }
+
+  &__paginationArrow {
+
+    > svg {
+      width: 2.2rem;
+      height: 1.4rem;
+
+      > path {
+        stroke: #292D32;
+      }
+    }
+
+    &--left {
+      margin-right: 2.5rem;
+    }
+
+    &--right {
+    }
+  }
+
+  &__slider {
+    overflow: hidden;
+
+    .articles__item {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .seeAlso {
+    &__titleBlock {
+      flex-direction: column;
+    }
+
+    &__titleBlockText {
+      width: 80%;
+    }
+
+    &__title {
+      margin-bottom: 2rem;
+      font-size: 5rem;
+      line-height: 3rem;
+    }
+
+    &__description {
+      margin-bottom: 6rem;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__paginationBlock {
+      width: 100%;
+      padding-bottom: 2rem;
+
+      &:before {
+        width: 11.2rem;
+      }
+    }
+
+    &__pagination {
+      font-size: 3rem;
+      line-height: 3.8rem;
+
+      > .swiper-pagination-current {
+        font-size: 5.6rem;
+        line-height: 7.1rem;
+      }
+    }
+
+    &__paginationArrow {
+
+      > svg {
+        width: 3.4rem;
+        height: 2.2rem;
+      }
+
+      &--left {
+        margin-right: 5rem;
+      }
+
+      &--right {
+      }
+    }
+
+    &__slider {
+      margin-right: -4rem;
+
+      .articles__imageBlock {
+        height: 26rem;
+      }
+    }
+  }
+}

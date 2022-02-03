@@ -1,0 +1,139 @@
+.background {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // z-index: -1;
+  // width: 100%;
+  background-color: #fff;
+
+  &--usefulArticles {
+    height: 60.5rem;
+  }
+
+  &--article {
+    height: 77.9rem;
+  }
+}
+
+.banner.background--usefulArticles {
+  padding-top: 14rem;
+  height: 60rem;
+  margin-bottom: 33.5rem;
+  position: relative;
+
+  .banner {
+    
+    &__content-wrap {
+    
+      display: flex;
+      width: 150rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -27.5rem;
+    }
+    
+    &__content-left {
+      width: 50%;
+      padding: 4.7rem 9rem 5.4rem 9rem;
+      color: #ffffff;
+
+      background: #212129;
+      border-radius: 0rem 0rem 0 6rem;
+
+    }
+    
+    &__infoBlock {
+      margin-bottom: 5.1rem;
+    }
+    
+    &__date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.6rem;
+
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      stroke: #FAAA3D;
+      margin-right: 1rem;
+    }
+
+    span {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+    }
+    
+    &__itemTitle {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    
+    &__itemDescription {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+    
+    &__itemButton {
+      color: #ffffff;
+    }
+    
+    &__imageBlock {
+      border-radius: 0 6rem 0 0rem;
+      width: 50%;
+
+      img {
+        height: 100%;
+        border-radius: inherit;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+.banner {
+  
+  &__titleBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5.9rem;
+  }
+
+  &__-title {
+    width: 67.4rem;
+    font-size: 6rem;
+    line-height: 7.6rem;
+    font-weight: normal;
+    color: #292D32;
+
+    > span {
+      font-weight: bold;
+    }
+  }
+
+  &__titleBlockInfo {
+    width: 62rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+    color: #292D32;
+  }
+  
+}
+
+@media (max-width: 48em) {
+  .background {
+    &--usefulArticles {
+      height: 147.6rem;
+    }
+
+    &--article {
+      height: 80rem;
+    }
+  }
+}

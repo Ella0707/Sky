@@ -1,0 +1,436 @@
+.articles__titleBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7.9rem;
+}
+.articles__title {
+  width: 67.4rem;
+  font-size: 6rem;
+  line-height: 7.6rem;
+  font-weight: normal;
+  color: #292D32;
+}
+.articles__title > span {
+  font-weight: bold;
+}
+.articles__titleBlockInfo {
+  width: 62rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: normal;
+  color: #292D32;
+}
+.articles__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 46rem;
+  margin-bottom: 6.7rem;
+}
+.articles__imageBlock {
+  width: 100%;
+  height: 25rem;
+  border-radius: 0 4.5rem 0 0;
+  overflow: hidden;
+}
+.articles__imageBlock > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.articles__infoBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 3rem;
+  border-radius: 0 0 0 4.5rem;
+  background-color: #fff;
+}
+.articles__itemTitle {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.articles__itemDescription {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 300;
+  margin-bottom: 2.4rem;
+}
+.articles__itemBottomBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.articles__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #777;
+}
+.articles__date > svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+}
+.articles__date > svg > path {
+  stroke: #06A4D9;
+}
+.articles__itemButton > svg {
+  width: 5.2rem;
+  height: 1.4rem;
+}
+.articles__itemButton > svg > path {
+  stroke: #292D32;
+}
+.articles__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.articles__cards--medium .articles__item {
+  width: 70rem;
+  border-radius: 0;
+  margin-bottom: 10rem;
+}
+.articles__cards--medium .articles__imageBlock {
+  height: 35rem;
+  border-radius: 6rem 0 0 0;
+  overflow: hidden;
+}
+.articles__cards--medium .articles__infoBlock {
+  position: relative;
+  z-index: 1;
+  width: 62rem;
+  margin: -10rem auto 0 auto;
+  padding: 2.8rem 4rem 3rem 4rem;
+  border-radius: 0 4.5rem;
+  background-color: #fff;
+}
+.articles__cards--medium .articles__itemTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.2rem;
+  min-height: 5rem;
+}
+.articles__cards--big .articles__item {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  border-radius: 0 6rem;
+  margin-bottom: 10rem;
+}
+.articles__cards--big .articles__imageBlock {
+  width: 50%;
+  height: 100%;
+  border-radius: 0 6rem 0 0;
+}
+.articles__cards--big .articles__infoBlock {
+  width: 50%;
+  padding: 5rem 9rem;
+  border-radius: 0 0 0 6rem;
+  background-color: #212129;
+}
+.articles__cards--big .articles__itemTitle {
+  font-size: 3rem;
+  line-height: 3.8rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.articles__cards--big .articles__itemDescription {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #fff;
+}
+.articles__cards--big .articles__date {
+  color: #fff;
+  margin-bottom: 3.5rem;
+}
+.articles__cards--big .articles__date > svg > path {
+  stroke: #FAAA3D;
+}
+.articles__cards--big .articles__itemButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23.4rem;
+  min-height: 6rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+.articles__paginationBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.articles__moreButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23.4rem;
+  height: 6rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 6rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+.articles__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 34rem;
+  height: 6.6rem;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.3);
+}
+.articles__pagination > div:first-child {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.articles__paginationNumber {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: normal;
+  color: #777;
+  margin-right: 1.3rem;
+  cursor: pointer;
+}
+.articles__paginationNumber--active {
+  font-size: 4rem;
+  line-height: 5.1rem;
+  color: #292D32;
+}
+.articles__paginationArrow > svg {
+  width: 2.2rem;
+  height: 1.4rem;
+}
+.articles__paginationArrow > svg > path {
+  stroke: #292D32;
+}
+.articles__paginationArrow--left {
+  margin-right: 2.5rem;
+}
+@media (max-width: 48em) {
+  .articles__titleBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 14rem;
+  }
+  .articles__title {
+    width: 100%;
+    font-size: 5.4rem;
+    line-height: 6.8rem;
+    font-weight: 300;
+    margin-bottom: 3.8rem;
+  }
+  .articles__titleBlockInfo {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .articles__item {
+    width: 100%;
+    margin-bottom: 14rem;
+    border-radius: 0 4rem;
+  }
+  .articles__imageBlock {
+    height: 36rem;
+    border-radius: 0 4rem 0 0;
+  }
+  .articles__infoBlock {
+    padding: 4rem 4rem 5.6rem 4rem;
+    border-radius: 0 0 0 4rem;
+  }
+  .articles__itemTitle {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+  }
+  .articles__itemDescription {
+    font-size: 3rem;
+    line-height: 3.8rem;
+    margin-bottom: 4rem;
+  }
+  .articles__date {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .articles__date > svg {
+    width: 4rem;
+    height: 4rem;
+  }
+  .articles__itemButton > svg {
+    width: 8.4rem;
+    height: 2.2rem;
+  }
+  .articles__cards--medium .articles__item {
+    border-radius: 0;
+  }
+  .articles__cards--medium .articles__imageBlock {
+    width: 100%;
+    height: 40rem;
+    border-radius: 7rem 0 0 0;
+  }
+  .articles__cards--medium .articles__infoBlock {
+    width: 59rem;
+    margin-top: -16rem;
+    padding: 5.4rem 4rem 4rem 4rem;
+    border-radius: 0 4rem;
+  }
+  .articles__cards--medium .articles__itemTitle {
+    margin-bottom: 4.6rem;
+  }
+  .articles__cards--big .articles__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 0 7rem;
+  }
+  .articles__cards--big .articles__imageBlock {
+    width: 100%;
+    height: 42rem;
+    border-radius: 0 0 0 7rem;
+  }
+  .articles__cards--big .articles__infoBlock {
+    width: 100%;
+    padding: 6rem 5.8rem 8.4rem 6rem;
+    border-radius: 0 7rem 0 0;
+  }
+  .articles__cards--big .articles__itemTitle {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+  }
+  .articles__cards--big .articles__itemDescription {
+    font-size: 3rem;
+    line-height: 4.2rem;
+    margin-bottom: 7rem;
+  }
+  .articles__cards--big .articles__date {
+    margin-bottom: 6rem;
+  }
+  .articles__cards--big .articles__itemButton {
+    width: 34rem;
+    height: 9rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .articles__paginationBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .articles__moreButton {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 34rem;
+    height: 9rem;
+    border-radius: 12rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .articles__pagination {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    margin-bottom: 8rem;
+    padding-bottom: 2rem;
+  }
+  .articles__paginationNumber {
+    font-size: 3rem;
+    line-height: 3.8rem;
+    margin-right: 2rem;
+  }
+  .articles__paginationNumber--active {
+    font-size: 5.6rem;
+    line-height: 7.1rem;
+  }
+  .articles__paginationArrow > svg {
+    width: 3.4rem;
+    height: 2.2rem;
+  }
+  .articles__paginationArrow--left {
+    margin-right: 6rem;
+  }
+}/*# sourceMappingURL=articles.css.map */

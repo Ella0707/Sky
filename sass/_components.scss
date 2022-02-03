@@ -129,6 +129,41 @@
 }
 
 
+.breadcrumbs {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #292D32;
+
+    margin-bottom: 5.5rem;
+
+
+    a {
+        position: relative;
+        line-height: 1.5;
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+
+        &:not(:first-child) {
+
+            &::before {
+                content: ">";
+                font-size: 1.6rem;
+
+                position: absolute;
+                left: -2.4rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &:last-child {
+            color: #777777;
+        }
+    }
+}
 
 
 

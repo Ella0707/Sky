@@ -1,0 +1,471 @@
+.articles {
+
+  &__titleBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7.9rem;
+  }
+
+  &__title {
+    width: 67.4rem;
+    font-size: 6rem;
+    line-height: 7.6rem;
+    font-weight: normal;
+    color: #292D32;
+
+    > span {
+      font-weight: bold;
+    }
+  }
+
+  &__titleBlockInfo {
+    width: 62rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+    color: #292D32;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 46rem;
+    //border-radius: 0 4.5rem;
+    //overflow: hidden;
+    margin-bottom: 6.7rem;
+  }
+
+  &__imageBlock {
+    width: 100%;
+    height: 25rem;
+    border-radius: 0 4.5rem 0 0;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__infoBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 3rem;
+    border-radius: 0 0 0 4.5rem;
+    background-color: #fff;
+  }
+
+  &__itemTitle {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  &__itemDescription {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 300;
+    margin-bottom: 2.4rem;
+  }
+
+  &__itemBottomBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: #777;
+
+    > svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 1rem;
+
+      > path {
+        stroke: #06A4D9;
+      }
+    }
+  }
+
+  &__itemButton {
+    > svg {
+      width: 5.2rem;
+      height: 1.4rem;
+
+      > path {
+        stroke: #292D32;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--medium .articles {
+
+      &__item {
+        width: 70rem;
+        border-radius: 0;
+        margin-bottom: 10rem;
+      }
+
+      &__imageBlock {
+        height: 35rem;
+        border-radius: 6rem 0 0 0;
+        overflow: hidden;
+      }
+
+      &__infoBlock {
+        position: relative;
+        z-index: 1;
+        width: 62rem;
+        margin: -10rem auto 0 auto;
+        padding: 2.8rem 4rem 3rem 4rem;
+        border-radius: 0 4.5rem;
+        background-color: #fff;
+      }
+
+      &__itemTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.2rem;
+        min-height: 5rem;
+      }
+    }
+
+    &--big .articles {
+
+      &__item {
+        flex-direction: row;
+        width: 100%;
+        border-radius: 0 6rem;
+        margin-bottom: 10rem;
+      }
+
+      &__imageBlock {
+        width: 50%;
+        height: 100%;
+        border-radius: 0 6rem 0 0;
+      }
+
+      &__infoBlock {
+        width: 50%;
+        padding: 5rem 9rem;
+        border-radius: 0 0 0 6rem;
+        background-color: #212129;
+      }
+
+      &__itemTitle {
+        font-size: 3rem;
+        line-height: 3.8rem;
+        color: #fff;
+        margin-bottom: 2rem;
+      }
+
+      &__itemDescription {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        color: #fff;
+      }
+
+      &__date {
+        color: #fff;
+        margin-bottom: 3.5rem;
+
+        > svg > path {
+          stroke: #FAAA3D;
+        }
+      }
+
+      &__itemButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23.4rem;
+        min-height: 6rem;
+        border: 1px solid rgba(214, 214, 214, 1);
+        border-radius: 6rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+  }
+
+  // TODO: Сделать скролбар
+  &__paginationBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__moreButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23.4rem;
+    height: 6rem;
+    border: 1px solid rgba(214, 214, 214, 1);
+    border-radius: 6rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 34rem;
+    height: 6.6rem;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.3);
+
+    > div:first-child {
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &__paginationNumber {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+    color: #777;
+    margin-right: 1.3rem;
+    cursor: pointer;
+
+    &--active {
+      font-size: 4rem;
+      line-height: 5.1rem;
+      color: #292D32;
+    }
+  }
+
+  &__paginationArrow {
+
+    > svg {
+      width: 2.2rem;
+      height: 1.4rem;
+
+      > path {
+        stroke: #292D32;
+      }
+    }
+
+    &--left {
+      margin-right: 2.5rem;
+    }
+
+    &--right {}
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 48em) {
+  .articles {
+
+    &__titleBlock {
+      flex-direction: column;
+      margin-bottom: 14rem;
+    }
+
+    &__title {
+      width: 100%;
+      font-size: 5.4rem;
+      line-height: 6.8rem;
+      font-weight: 300;
+      margin-bottom: 3.8rem;
+    }
+
+    &__titleBlockInfo {
+      width: 100%;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__item {
+      width: 100%;
+      margin-bottom: 14rem;
+      border-radius: 0 4rem;
+    }
+
+    &__imageBlock {
+      height: 36rem;
+      border-radius: 0 4rem 0 0;
+    }
+
+    &__infoBlock {
+      padding: 4rem 4rem 5.6rem 4rem;
+      border-radius: 0 0 0 4rem;
+    }
+
+    &__itemTitle {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    &__itemDescription {
+      font-size: 3rem;
+      line-height: 3.8rem;
+      margin-bottom: 4rem;
+    }
+
+    &__itemBottomBlock {
+
+      &--medium {}
+    }
+
+    &__date {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+
+      > svg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    &__itemButton {
+
+      > svg {
+        width: 8.4rem;
+        height: 2.2rem;
+      }
+    }
+
+    &__cards {
+
+      &--medium .articles {
+
+        &__item {
+          border-radius: 0;
+        }
+
+        &__imageBlock {
+          width: 100%;
+          height: 40rem;
+          border-radius: 7rem 0 0 0;
+        }
+
+        &__infoBlock {
+          width: 59rem;
+          margin-top: -16rem;
+          padding: 5.4rem 4rem 4rem 4rem;
+          border-radius: 0 4rem;
+        }
+
+        &__itemTitle {
+          margin-bottom: 4.6rem;
+        }
+      }
+
+      &--big .articles {
+
+        &__item {
+          flex-direction: column;
+          border-radius: 0 7rem;
+        }
+
+        &__imageBlock {
+          width: 100%;
+          height: 42rem;
+          border-radius: 0 0 0 7rem;
+        }
+
+        &__infoBlock {
+          width: 100%;
+          padding: 6rem 5.8rem 8.4rem 6rem;
+          border-radius: 0 7rem 0 0;
+        }
+
+        &__itemTitle {
+          font-size: 4rem;
+          line-height: 5rem;
+          margin-bottom: 3rem;
+        }
+
+        &__itemDescription {
+          font-size: 3rem;
+          line-height: 4.2rem;
+          margin-bottom: 7rem;
+        }
+
+        &__date {
+          margin-bottom: 6rem;
+        }
+
+        &__itemButton {
+          width: 34rem;
+          height: 9rem;
+          font-size: 2.8rem;
+          line-height: 3.6rem;
+        }
+      }
+    }
+
+    &__paginationBlock {
+      flex-direction: column;
+    }
+
+    &__moreButton {
+      order: 2;
+      width: 34rem;
+      height: 9rem;
+      border-radius: 12rem;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+
+    &__pagination {
+      order: 1;
+      width: 100%;
+      margin-bottom: 8rem;
+      padding-bottom: 2rem;
+    }
+
+    &__paginationNumber {
+      font-size: 3rem;
+      line-height: 3.8rem;
+      margin-right: 2rem;
+
+      &--active {
+        font-size: 5.6rem;
+        line-height: 7.1rem;
+      }
+    }
+
+    &__paginationArrow {
+      > svg {
+        width: 3.4rem;
+        height: 2.2rem;
+      }
+
+      &--left {
+        margin-right: 6rem;
+      }
+
+      &--right {}
+    }
+  }
+}
