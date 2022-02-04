@@ -1863,7 +1863,7 @@ input[type=number] {
 }
 
 .banner.banner--dark {
-  height: 60rem;
+  height: 59rem;
   margin-bottom: 0;
 }
 .banner.banner--dark .banner__inner {
@@ -2863,6 +2863,9 @@ input[type=number] {
     height: 26rem;
   }
 }
+.banner.page-support-m .banner__inner {
+  padding-top: 11.3rem;
+}
 .banner__advantage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2892,6 +2895,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 2rem;
 }
 .banner__advantage-img {
   width: 4.5rem;
@@ -2913,6 +2917,7 @@ input[type=number] {
   font-size: 1.6rem;
   font-weight: 300;
   color: #160b15;
+  text-align: center;
 }
 
 .mobile {
@@ -4015,7 +4020,7 @@ input[type=number] {
     position: relative;
   }
   .banner.banner--dark .banner__inner {
-    padding-top: 14rem;
+    padding-top: 13.5rem;
   }
   .banner.banner--dark .banner__location-sity {
     color: #292D32;
@@ -4130,8 +4135,6 @@ input[type=number] {
   .map {
     height: 167rem;
     width: 100%;
-    position: relative;
-    z-index: -1;
   }
   .map__map {
     width: 100%;
