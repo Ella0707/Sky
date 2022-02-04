@@ -1,0 +1,14 @@
+.feedback--article {
+  &.page-contacts {
+    margin-bottom: 18rem;
+
+    &:before {
+      width: 160rem;
+      border-radius: 0 0 0 6rem;
+    }
+
+    .feedback__substrate {
+      top: -13rem;
+    }
+  }
+}

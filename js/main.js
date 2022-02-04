@@ -97,6 +97,8 @@ const seeAlsoSlider = new Swiper('.seeAlso__slider', {
   direction: 'horizontal',
   slidesPerView: 3,
   slidesPerGroup: 3,
+  speed: 800,
+  slidesOffsetAfter: 30,
 
   pagination: {
       el: '.seeAlso__pagination',
@@ -120,6 +122,11 @@ const seeAlsoSlider = new Swiper('.seeAlso__slider', {
   navigation: {
       nextEl: '.seeAlso__paginationArrow--right',
       prevEl: '.seeAlso__paginationArrow--left',
+  },
+
+  scrollbar: {
+      el: '.seeAlso__scrollBar',
+      draggable: true,
   },
 
   breakpoints: {

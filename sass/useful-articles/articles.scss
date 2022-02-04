@@ -1,4 +1,6 @@
 .articles {
+  padding-top: 22rem;
+  padding-bottom: 18rem;
 
   &__titleBlock {
     display: flex;
@@ -207,7 +209,6 @@
     }
   }
 
-  // TODO: Сделать скролбар
   &__paginationBlock {
     display: flex;
     justify-content: space-between;
@@ -283,6 +284,7 @@
 
 @media (max-width: 48em) {
   .articles {
+    padding-top: 28.8rem;
 
     &__titleBlock {
       flex-direction: column;

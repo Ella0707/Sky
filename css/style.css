@@ -1,8 +1,13 @@
-@charset "UTF-8";
-@font-face {
-  font-family: "Euclid Circular A";
-  src: url("../fonts/EuclidCircularA-Bold.eot");
-  src: local("Euclid Circular A Bold"), local("EuclidCircularA-Bold"), url("../fonts/EuclidCircularA-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/EuclidCircularA-Bold.woff2") format("woff2"), url("../fonts/EuclidCircularA-Bold.woff") format("woff"), url("../fonts/EuclidCircularA-Bold.ttf") format("truetype");
+.feedback--article.page-contacts {
+  margin-bottom: 18rem;
+}
+.feedback--article.page-contacts:before {
+  width: 160rem;
+  border-radius: 0 0 0 6rem;
+}
+.feedback--article.page-contacts .feedback__substrate {
+  top: -13rem;
+}/*# sourceMappingURL=style.css.map */"), url("../fonts/EuclidCircularA-Bold.woff2") format("woff2"), url("../fonts/EuclidCircularA-Bold.woff") format("woff"), url("../fonts/EuclidCircularA-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -507,6 +512,12 @@ input[type=number] {
   }
 }
 .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
   background-color: #fff;
 }
 .background--usefulArticles {
@@ -2043,6 +2054,10 @@ input[type=number] {
   width: 89rem;
 }
 
+.articles {
+  padding-top: 22rem;
+  padding-bottom: 18rem;
+}
 .articles__titleBlock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2331,6 +2346,9 @@ input[type=number] {
   margin-right: 2.5rem;
 }
 @media (max-width: 48em) {
+  .articles {
+    padding-top: 28.8rem;
+  }
   .articles__titleBlock {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2478,6 +2496,10 @@ input[type=number] {
   .articles__paginationArrow--left {
     margin-right: 6rem;
   }
+}
+.article {
+  padding-top: 20rem;
+  margin-bottom: 16rem;
 }
 .article__title {
   display: block;
@@ -2652,6 +2674,10 @@ input[type=number] {
 }
 
 @media (max-width: 48em) {
+  .article {
+    padding-top: 28.8rem;
+    margin-bottom: 19rem;
+  }
   .article__title {
     width: 100%;
     margin-bottom: 5.6rem;
@@ -2722,6 +2748,9 @@ input[type=number] {
     margin-bottom: 12rem;
   }
 }
+.seeAlso {
+  margin-bottom: 18rem;
+}
 .seeAlso__titleBlock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2767,17 +2796,6 @@ input[type=number] {
       -ms-flex-align: center;
           align-items: center;
   width: 34rem;
-  border-bottom: 1px solid rgba(119, 119, 119, 0.3);
-}
-.seeAlso__paginationBlock:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  display: block;
-  width: 5.6rem;
-  height: 2px;
-  background-color: #06A4D9;
 }
 .seeAlso__pagination {
   -webkit-box-flex: 1;
@@ -2806,6 +2824,18 @@ input[type=number] {
 }
 .seeAlso__paginationArrow--left {
   margin-right: 2.5rem;
+}
+.seeAlso__scrollBar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.1rem;
+  background: rgba(119, 119, 119, 0.3);
+}
+.seeAlso__scrollBar .swiper-scrollbar-drag {
+  height: 0.2rem;
+  background: #06A4D9;
 }
 .seeAlso__slider {
   overflow: hidden;
@@ -4035,7 +4065,7 @@ input[type=number] {
   .contacts-block {
     width: 67rem;
     position: absolute;
-    bottom: -100.5rem;
+    top: 57rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -4043,7 +4073,7 @@ input[type=number] {
   .contacts-block__inner {
     background-color: #ffffff;
     border-radius: 0rem 6rem;
-    padding: 12.5rem 4rem;
+    padding: 12.5rem 4rem 10rem 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

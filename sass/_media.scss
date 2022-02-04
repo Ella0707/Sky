@@ -1199,26 +1199,18 @@
         }
     }
     
-    .banner--dark {
-    
-  
-    }
-    
-    
     .contacts-block {
     
         width: 67rem;
         position: absolute;
-        bottom: -100.5rem;
+        top: 57rem;
         left: 50%;
         transform: translateX(-50%);
-        // z-index: 2;
-       
-    
+ 
         &__inner {
             background-color: #ffffff;
             border-radius: 0rem 6rem;
-            padding: 12.5rem 4rem;
+            padding: 12.5rem 4rem 10rem 4rem;
             display: flex;
             justify-content: space-between;
             flex-direction: column;

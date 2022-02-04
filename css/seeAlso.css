@@ -1,3 +1,6 @@
+.seeAlso {
+  margin-bottom: 18rem;
+}
 .seeAlso__titleBlock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,17 +46,6 @@
       -ms-flex-align: center;
           align-items: center;
   width: 34rem;
-  border-bottom: 1px solid rgba(119, 119, 119, 0.3);
-}
-.seeAlso__paginationBlock:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  display: block;
-  width: 5.6rem;
-  height: 2px;
-  background-color: #06A4D9;
 }
 .seeAlso__pagination {
   -webkit-box-flex: 1;
@@ -82,6 +74,18 @@
 }
 .seeAlso__paginationArrow--left {
   margin-right: 2.5rem;
+}
+.seeAlso__scrollBar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.1rem;
+  background: rgba(119, 119, 119, 0.3);
+}
+.seeAlso__scrollBar .swiper-scrollbar-drag {
+  height: 0.2rem;
+  background: #06A4D9;
 }
 .seeAlso__slider {
   overflow: hidden;
