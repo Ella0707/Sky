@@ -49,7 +49,6 @@
 
     &__wrap {
         width: 34rem;
-        // margin-top: 1rem;
     }
     
     &__top {
@@ -175,44 +174,26 @@
     height: 6rem;
     display: flex;
 
-    // &:focus-visible {
-    // border-bottom: 1.5px solid #06A4D9;
-
-    // .select__header {
-    //     svg {
-    //         stroke: #06A4D9;
-    //     }
-    // }
-
-    // }
-
-
     &__header {
         width: 100%;
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        align-items: flex-end;
         padding-bottom: 1rem;
+        margin-top: auto;
         cursor: pointer;
 
         svg {
             stroke: #292D32;
         }
-
-        &:focus-visible {
-            svg {
-            stroke:  #06A4D9;
-
-            }
-        }
-
-
     }
 
     &__current {
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: #c5c5c5;
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: rgba(41, 45, 50, 1);
+        width: 100%;
+        padding-right: 2rem;
     }
 
     &__body {
@@ -236,13 +217,23 @@
         padding: 0.5rem;
         font-size: 1.6rem;
         height: 4rem;
-        color: #292729;
+        color: rgba(41, 45, 50, 1);
         cursor: pointer;
     }
 
     &.is-active  {
         .select__body {
             display: flex;
+        }
+
+        .select__header {
+            svg {
+                stroke:  #06A4D9;
+            }
+        }
+
+        .select__arrow {
+            transform: rotateX(180deg);
         }
     }
 }
