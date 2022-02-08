@@ -3012,6 +3012,16 @@ input[type=number] {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 2rem;
+  position: relative;
+}
+.banner__advantage-box:not(:last-child)::after {
+  content: "";
+  width: 0.1rem;
+  height: 17rem;
+  background: #e0e0e0;
+  position: absolute;
+  top: 0;
+  right: -4rem;
 }
 .banner__advantage-img {
   width: 4.5rem;
