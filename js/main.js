@@ -1,3 +1,4 @@
+// селект на странице поддержка среднего бизнеса в форме
 
 let select = function () {
   let selectHeader = document.querySelectorAll('.select__header');
@@ -21,13 +22,46 @@ let select = function () {
           currentText = select.querySelector('.select__current');
       currentText.innerText = text;
       select.classList.remove('is-active');
-
   }
-
 };
 
-
 select();
+
+// счетчик на странице поддержка ср бизнеза
+const counter = function () {
+  const btns = document.querySelectorAll('.counter__btn');
+
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const direction = this.dataset.direction;
+      const inp = this.parentElement.querySelector('.counter__value');
+      const currentValue = +inp.value;
+      let newValue;
+
+      if (direction === 'plus') {
+        newValue = currentValue + 1;
+      } else {
+        newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+      }
+
+      inp.value = newValue;
+    })
+  })
+
+}
+
+counter();
+
+
+
+// выбор акции стр. поддрежка ср бизнеса 
+$(".payment__select-item").click(function(e) {
+  e.preventDefault();
+  $(this).toggleClass('chose');
+  $(".payment__checkbox-input").addClass('checked');
+  $(this).removeClass('checked');
+})
 
 
 

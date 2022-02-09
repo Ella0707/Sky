@@ -3434,6 +3434,9 @@ input[type=number] {
           justify-content: space-between;
   width: 100%;
 }
+.payment__item:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
 .payment__item-title-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3441,7 +3444,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 74.5%;
 }
 .payment__item-title-img {
   width: 3rem;
@@ -3472,6 +3475,7 @@ input[type=number] {
   border: 0.1rem solid #D6D6D6;
   border-radius: 5rem;
   padding: 0 2rem;
+  margin-left: 2rem;
 }
 .payment__counter-btn {
   color: #777777;
@@ -3482,6 +3486,158 @@ input[type=number] {
   font-size: 2rem;
   font-weight: 500;
   color: #292D32;
+}
+.payment__switch {
+  cursor: pointer;
+  margin-right: auto;
+}
+.payment__switch-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 7.2rem;
+  padding: 1px;
+  background: #ffffff;
+  border-radius: 6rem;
+  border: 1px solid #D6D6D6;
+  margin-left: 2rem;
+}
+.payment .payment__switch input:checked + .payment__switch-row .payment__switch-icon {
+  -webkit-transform: translateX(3.5rem);
+          transform: translateX(3.5rem);
+  background-color: #06A4D9;
+}
+.payment__switch-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: #D6D6D6;
+  position: relative;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: transform, background-color;
+  transition-property: transform, background-color, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+.payment__select-block {
+  width: 50%;
+}
+.payment__select-block-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.payment__select-block-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #292D32;
+}
+.payment__select-block-subtitle {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #777777;
+}
+.payment__select-item {
+  width: 68.3rem;
+  height: 14rem;
+  padding: 1rem 3rem;
+  border: 1px solid #CCCCCC;
+  background: #ffffff;
+}
+.payment__select-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.payment__select-item.chose {
+  background-color: #06A4D9;
+  color: #ffffff;
+}
+.payment__select-item.chose .payment__checkbox-label {
+  color: #ffffff;
+}
+.payment__select-item.chose .payment__checkbox-input.checked + .payment__checkbox-style::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.25rem solid #FFFFFF;
+  background-image: url(./../img/check2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.55rem;
+  background-color: #06A4D9;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.payment__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-left: 6rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #292D32;
+}
+.payment__checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.payment__checkbox-input:checked + .payment__checkbox-style::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.25rem solid #FFFFFF;
+  background-image: url(./../img/check2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.55rem;
+  background-color: #06A4D9;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.payment__checkbox-style {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #FFFFFF;
+  border: 0.25rem solid #292D32;
+  margin-left: -6rem;
+}
+.payment__select-value span {
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 .mobile {
   display: none;
