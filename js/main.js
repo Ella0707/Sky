@@ -56,15 +56,39 @@ counter();
 
 
 // выбор акции стр. поддрежка ср бизнеса 
-$(".payment__select-item").click(function(e) {
-  e.preventDefault();
-  $(this).toggleClass('chose');
-  $(".payment__checkbox-input").addClass('checked');
-  $(this).removeClass('checked');
+// $(".payment__select-item").click(function(e) {
+//   e.preventDefault();
+//   $(this).toggleClass('chose');
+//   $(".payment__checkbox-input").addClass('checked');
+//   $(this).removeClass('checked');
+// })
+
+
+$(".payment__checkbox-input").on('click', function () {
+ 
+  if ( $(this).is(':checked') ) {
+    $(".payment__select-item" ).toggleClass('chose');
+    // $(this).addClass('chose');
+  }
+
+  else {
+    // $(".payment__select-item").removeClass('chose');
+
+  }
 })
 
+// const checkbox = document.querySelector('.payment__checkbox-input');
+// const selectItem = document.querySelector('.payment__select-item');
 
+// checkbox.addEventListener('change', function () {
+//     if ( this.checked ) {
+//         selectItem.toggleClass('chose');
+//     } 
+//     // else 
+//     // selectItem.classList.removeClass('chose');
+// })
 
+// checkbox()
 
 let reviewSlider = new Swiper('.reviews__content', {
     slidesPerView: 1.5,

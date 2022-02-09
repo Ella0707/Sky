@@ -481,6 +481,7 @@
 
 
 .payment {
+    margin-bottom: 17rem;
 
     
     &__title-wrap {
@@ -492,13 +493,14 @@
     }
     
     &__title {
-        width: 47%;
+        width: 51%;
+        line-height: 1.268;
     
     }
     
     
     &__title-right {
-        width: 45%;
+        width: 45.5%;
     
     }
     
@@ -513,6 +515,8 @@
         font-size: 1.8rem;
         font-weight: 400;
         color: #292D32;
+        line-height: 1.268;
+        width: 52rem;
     }
     
     &__content {
@@ -521,12 +525,15 @@
     
     &__main {
         display: flex;
+        justify-content: space-between;
+        padding-bottom: 3.9rem;
+        border-bottom: 1px solid #CCCCCC;
 
     
     }
     
     &__list-wrap {
-        width: 50%;
+        width: 53%;
     
     }
     
@@ -552,7 +559,7 @@
         width: 100%;
 
         &:not(:last-child) {
-            margin-bottom: 3.5rem;
+            margin-bottom: 3.8rem;
         }
     
     }
@@ -618,7 +625,7 @@
         background: #ffffff;
         border-radius: 6rem;
         border: 1px solid  #D6D6D6;;
-        margin-left: 2rem;
+        margin-left: 3rem;
     }
     
     .payment__switch input:checked + .payment__switch-row .payment__switch-icon {
@@ -640,7 +647,8 @@
 
     
     &__select-block {
-        width: 50%;
+        width: 48%;
+        padding-left: 3.2rem;
     
     }
     
@@ -668,7 +676,7 @@
     }
     
     &__select-wrap {
-       
+       margin-bottom: 8.9rem;
 
     
     }
@@ -692,23 +700,23 @@
                 color: #ffffff;
             }
 
-            .payment__checkbox-input {
-                &.checked + .payment__checkbox-style::before {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    width: 2.5rem;
-                    height: 2.5rem;
-                    border: 0.25rem solid #FFFFFF;
-                    background-image: url(./../img/check2.svg);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: 1.55rem;
-                    background-color: #06A4D9;
-                    transform: translate(-50%, -50%);
-                }
-            }
+            // .payment__checkbox-input {
+            //     &.checked + .payment__checkbox-style::before {
+            //         content: "";
+            //         position: absolute;
+            //         top: 50%;
+            //         left: 50%;
+            //         width: 2.5rem;
+            //         height: 2.5rem;
+            //         border: 0.25rem solid #FFFFFF;
+            //         background-image: url(./../img/check2.svg);
+            //         background-repeat: no-repeat;
+            //         background-position: center;
+            //         background-size: 1.55rem;
+            //         background-color: #06A4D9;
+            //         transform: translate(-50%, -50%);
+            //     }
+            // }
         }
     }
     
@@ -718,7 +726,7 @@
         justify-content: space-between;
         width: 100%;
         height: 100%;
-        padding-left: 6rem;
+        padding-left: 5rem;
         cursor: pointer;
 
         font-size: 2.5rem;
@@ -736,19 +744,26 @@
         overflow: hidden;
         clip: rect(0 0 0 0);
 
+      
+        &:checked + .payment__checkbox-label {
+            background-color: #06A4D9;
+            color: #ffffff;
+        }
+
+        &:checked + .payment__checkbox-style {
+            border: 0.25rem solid #FFFFFF;
+            background: #06A4D9;
+
+        }
+
         &:checked + .payment__checkbox-style::before {
             content: "";
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 2.5rem;
-            height: 2.5rem;
-            border: 0.25rem solid #FFFFFF;
-            background-image: url(./../img/check2.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 1.55rem;
-            background-color: #06A4D9;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #ffffff;
             transform: translate(-50%, -50%);
         }
     }
@@ -759,7 +774,7 @@
         height: 2.5rem;
         background: #FFFFFF;
         border: 0.25rem solid #292D32;
-        margin-left: -6rem;
+        margin-left: -5.5rem;
     }
 
     &__checkbox-input {
@@ -782,11 +797,338 @@
         }
     
     }
+
+    
+    &__min-price {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: rgba(41, 45, 50, 1);
+        width: 44rem;
+    
+    }
+    
+    &__min-price-title {
+
+    
+    }
+    
+    &__min-price-value {
+
+        span {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    
+    }
     
     &__bottom {
+        padding-top: 3.8rem;
+        display: flex;
+        justify-content: space-between;
     
     }
 
+    
+    &__outsourcing {
+        width: 35%;
+    
+    }
+    
+    &__outsourcing-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: rgba(41, 45, 50, 1);
+        margin-bottom: 2.5rem;
+    }
 
+    &__outsourcing-prices {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 81.5%;
+    }
+    
+    &__outsourcing-new-price {
+        font-size: 5rem;
+        font-weight: 700;
+        color: rgba(41, 45, 50, 1);
+
+        sup {
+            font-size: 3rem;
+            font-weight: 400;
+            color: rgba(41, 45, 50, 1);
+        }
+    }
+    
+    &__outsourcing-old-price {
+        text-decoration: line-through;
+        font-size: 3rem;
+        font-weight: 400;
+        color: rgba(119, 119, 119, 1);
+
+        sup {
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+
+
+   
+    &__application {
+        width: 45.5%;
+   
+    }
+   
+    &__application-form {
+        width: 100%;
+        position: relative;
+   
+    }
+   
+    &__application-title-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+   
+    }
+   
+    &__application-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: rgba(41, 45, 50, 1);
+        width: 65%;
+   
+    }
+   
+    &__application-label {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: rgba(41, 45, 50, 1);
+        width: 30%;
+        line-height: 1.3;
+        cursor: pointer;
+    }
+
+    &__application-label-title {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: rgba(41, 45, 50, 1);
+        width: 18rem;
+    }
+   
+    &__application-checkbox-input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+
+        &:checked + .payment__application-checkbox-style::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2rem;
+            height: 2rem;
+            border: 0.15rem solid #06A4D9;
+            border-radius: 0.3rem;
+            background-image: url(./../img/check.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1.25rem;
+            transform: translate(-50%, -50%);
+        }
+    }
+   
+    &__application-checkbox-style {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        background: #FFFFFF;
+        border: 1px solid #C0C0C0;
+        margin-right: 1rem;
+    }
+   
+    &__application-info-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+   
+    }
+   
+    &__application-input-wrap {
+
+        border-bottom: 1.5px solid #D6D6D6;
+        position: relative;
+        padding-bottom: 1rem;
+
+        &:nth-child(1) {
+            width: 25.2rem;
+        }
+
+        &:nth-child(2) {
+            width: 42rem;
+        }
+
+        &:focus-within {
+            border-bottom: 1.5px solid #06A4D9;
+
+            .payment__application-input-img {
+                stroke: #06A4D9;
+            }
+        }
+
+   
+    }
+   
+    &__application-input-img {
+        width: 2.4rem;
+        height: 2.4rem;
+        stroke: #292D32;
+        margin-right: 1rem;
+
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+   
+    &__application-input {
+        padding-left: 3rem;
+        font-size: 2.5rem;
+        width: 23rem;
+
+        &.input-email {
+            width: 35rem;
+        }
+
+
+        &::placeholder {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: rgba(41, 45, 50, 1);
+        }
+        
+
+
+   
+    }
+   
+    &__application-btn {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        background: rgba(41, 45, 50, 1);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        right: 0;
+        bottom: 0.5rem;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
+
+
+
+.benefit {
+
+    padding-top: 16.1rem;
+    margin-bottom: 20rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 148rem;
+        height: 51rem;
+        background: #212129;
+        border-radius: 0px 6rem 0px 0px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    
+    &__title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6rem;
+        width: 78.5%;
+        line-height: 1.268;
+    }
+    
+    &__title {
+        font-size: 4rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        width: 60rem;
+    }
+    
+    &__subtitle {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 1);
+        width: 46rem;
+        padding-top: 2.5rem;
+
+    }
+    
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    &__box {
+        width: 46rem;
+        box-shadow: 1.5rem 3rem 10rem rgba(22, 11, 21, 0.08);
+        border-radius: 0px 6rem 0px 4.5rem;
+        border: 1.5rem solid #ffffff;
+        background: #ffffff;
+    
+    }
+    
+    &__box-img {
+        border-radius:  0px 6rem 0px 0rem;
+        width: 100%;
+        height: 23.5rem;
+        object-fit: cover;
+        margin-bottom: 3rem;
+    
+    }
+    
+    &__box-title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: rgba(22, 11, 21, 1);
+        margin-bottom: 1.5rem;
+        padding: 0 1.5rem;
+        line-height: 1.3;
+    }
+    
+    &__box-subtitle {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: rgba(22, 11, 21, 1);
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        line-height: 1.268;
+    }
+    
+    
 }
 
