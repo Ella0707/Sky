@@ -479,3 +479,143 @@
 
 
 
+
+.payment {
+
+    
+    &__title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 6.3rem;
+    
+    }
+    
+    &__title {
+        width: 47%;
+    
+    }
+    
+    
+    &__title-right {
+        width: 45%;
+    
+    }
+    
+    &__warning {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #292D32;
+    
+    }
+    
+    &__subtitle {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #292D32;
+    }
+    
+    &__content {
+        
+    }
+    
+    &__main {
+        display: flex;
+
+    
+    }
+    
+    &__list-wrap {
+        width: 50%;
+    
+    }
+    
+    &__list-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #292D32;
+        margin-bottom: 3rem;
+
+    
+    }
+    
+    &__list {
+        background: #FFFFFF;
+        padding: 4.5rem 3.6rem 5.5rem 4.5rem;
+    
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    
+    }
+    
+    &__item-title-wrap {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    
+    }
+    
+    &__item-title-img {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 2rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__item-title-title {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #292D32;
+        
+    
+    }
+    
+    &__counter {
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 0.1rem solid #D6D6D6;
+        border-radius: 5rem;
+        padding: 0 2rem;
+    
+    }
+   
+    
+    &__counter-btn {
+        color: #777777;
+    
+    }
+   
+    
+    &__cuunter-value {
+        width: 7rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #292D32;
+
+    
+    }
+   
+    
+    &__bottom {
+    
+    }
+    
+    
+
+}
+
+
+
