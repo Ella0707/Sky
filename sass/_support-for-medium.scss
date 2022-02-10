@@ -1522,6 +1522,8 @@
 .feedback {
     &.page-support-med {
 
+        margin-bottom: 15rem;
+
         .feedback__inner {
             padding-top: 16rem;
         }
@@ -1533,3 +1535,351 @@
         }
     }
 }
+
+
+
+.company {
+    margin-bottom: 20rem;
+
+
+    &__inner {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 115.1rem;
+            height: 60rem;
+            background: #ffffff;
+            box-shadow: 1.5rem 3rem 10rem rgba(22, 11, 21, 0.08);
+            border-radius: 0 6rem;
+    
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    
+        &::before {
+            content: "";
+            width: 20rem;
+            height: 0.4rem;
+            background: rgba(6, 164, 217, 1);
+          
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+  
+
+    
+    &__title-wrap {
+        text-align: center;
+        margin-bottom: 6rem;
+    
+    }
+    
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+    
+    &__subtitle {
+    
+    }
+    
+    &__content {
+        display: flex;
+    
+    }
+    
+    &__photo-block {
+        width: 55rem;
+        flex-shrink: 0;
+    
+    }
+    
+    &__photo {
+        width: 100%;
+        height: 54.5rem;
+        border-radius: 0px 6rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    
+    }
+    
+    &__text-block {
+        padding-top: 25rem;
+        padding-right: 14.5rem;
+    
+    }
+    
+    &__par-wrap {
+        font-size: 2rem;
+        font-weight: 300;
+        color: rgba(41, 45, 50, 1);
+        line-height: 1.268;
+        margin-bottom: 9.6rem;
+        padding-left: 15rem;
+        
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            width: 15rem;
+            height: 12rem;
+            background-image: url(./../img/quotes.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            position: absolute;
+            top: -20rem;
+            left: 15rem;
+        }
+    }
+    
+    &__par {
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    
+    }
+    
+    &__about-director {
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    &__director-logo {
+        width: 15rem;
+        height: 12.5rem;
+        background: rgba(6, 164, 217, 1);
+        margin-right: 4rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 9.8rem;
+            height: 4.4rem;
+        }
+    
+    }
+    
+    &__name-wrap {
+    
+    }
+    
+    &__name {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: rgba(41, 45, 50, 1);
+        margin-bottom: 0.5rem;
+    
+    }
+    
+    &__position {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: rgba(41, 45, 50, 1);
+    }
+
+}
+
+
+
+.numbers {
+
+    margin-bottom: 18rem;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+    
+    &__title {
+        margin-bottom: 1.2rem;
+    }
+    
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__box {
+        width: 35.2rem;
+        height: 25rem;
+        background: #ffffff;
+        box-shadow: 1.5rem 3rem 10rem rgba(22, 11, 21, 0.08);
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &:first-child {
+            padding: 0;
+            display: block;
+            border-radius: 6rem 0 0 0;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: inherit;
+            }
+        }
+
+        &:last-child {
+            padding: 0;
+            display: block;
+            border-radius: 0rem 0 6rem 0;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: inherit;
+            }
+        }
+
+        &:not(:nth-child(4n)) {
+            margin-right: 3rem;
+        }
+
+        &:not(:nth-child(n + 4)) {
+            margin-bottom: 3rem;
+        }
+    }
+    
+    &__box-title {
+        font-size: 6rem;
+        font-weight: 700;
+        color: rgba(41, 45, 50, 1);
+        margin-bottom: 1rem;
+    }
+    
+    &__box-subtitle {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: rgba(22, 11, 21, 1);
+        text-align: center;
+    }
+}
+
+.partners {
+    &.page-support-m {
+
+        .partners__slide-img {
+            width: 20rem;
+        }
+    }
+}
+
+
+.work {
+    &.page-support-m {
+        background: inherit;
+        padding-bottom: 0;
+        margin-bottom: 17.5rem;
+
+
+        .work__box {
+            background: #ffffff;
+        }
+    }
+}
+
+
+.feedback {
+    &.page-support {
+        height: 74rem;
+
+        &::before {
+            content: "";
+            width: 160rem;
+            height: 56.7rem;
+            background: #FFFFFF;
+            border-radius: 0rem 0px 0px 6rem;
+        }
+
+        .feedback__substrate {
+            top: -13rem;
+        }
+
+        .feedback__inner {
+            padding-top: 10.5rem;
+        }
+
+        .feedback__title-wrap {
+            margin-bottom: 4rem;
+        }
+
+        .feedback__information-personal {
+            margin-bottom: 1.5rem;
+        }
+
+        .feedback__information {
+            margin-bottom: 2.5rem;
+        }
+
+    }
+}
+
+
+.our-contacts {
+    position: relative;
+    height: 71rem;
+
+    &__map-wrap {
+        width: 92.3rem;
+        border-radius: 0 6rem 0 0;
+        height: 100%;
+        overflow: hidden;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    &__map {
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__inner {
+    
+    }
+    &__title-wrap {
+    
+    }
+    &__title {
+    
+    }
+    &__subtitle {
+    
+    }
+    &__contacts-block {
+        &.contacts-block {
+            width: 150rem;
+            position: static;
+            transform: translateX(0%); 
+            z-index: 10;
+        }
+    
+    }
+}
+

@@ -56,26 +56,40 @@ counter();
 
 
 // выбор акции стр. поддрежка ср бизнеса 
-// $(".payment__select-item").click(function(e) {
+// $(".payment__checkbox-label").click(function(e) {
 //   e.preventDefault();
 //   $(this).toggleClass('chose');
-//   $(".payment__checkbox-input").addClass('checked');
-//   $(this).removeClass('checked');
+//   $(".payment__select-item").toggleClass('chose');
+//   // $(this).removeClass('chose');
 // })
 
+// $('.payment__checkbox-label').click(function () {
+//   $('.payment__checkbox-label').parent().removeClass('chose');
+//   $(this).parent(this).addClass('chose');
+// });
 
-$(".payment__checkbox-input").on('click', function () {
+$('.payment__checkbox-input').change(function(){
+  if($(this).is(":checked")) {
+    $('.payment__select-item').addClass(this)('chose');
+    $('.payment__select-item').removeClass(this)('chose');
+
+  } else {
+      // $('.payment__select-item').removeClass("chose");
+  }
+});
+
+// $(".payment__checkbox-input").on('click', function () {
  
-  if ( $(this).is(':checked') ) {
-    $(".payment__select-item" ).toggleClass('chose');
-    // $(this).addClass('chose');
-  }
+//   if ( $(this).is(':checked') ) {
+//     $(".payment__checkbox-input" ).toggleClass('chose');
+//     $(this).addClass('chose');
+//   }
 
-  else {
-    // $(".payment__select-item").removeClass('chose');
+//   else {
+//     // $(".payment__select-item").removeClass('chose');
 
-  }
-})
+//   }
+// })
 
 // const checkbox = document.querySelector('.payment__checkbox-input');
 // const selectItem = document.querySelector('.payment__select-item');
@@ -89,6 +103,17 @@ $(".payment__checkbox-input").on('click', function () {
 // })
 
 // checkbox()
+
+// $('.payment__checkbox-label').change(function(){
+//   if($(this).is(":checked")) {
+//       $('.payment__select-item').addClass("chose");
+//   } else {
+//       $('.payment__select-item').removeClass("chose");
+//   }
+// });
+
+
+
 
 let reviewSlider = new Swiper('.reviews__content', {
     slidesPerView: 1.5,
