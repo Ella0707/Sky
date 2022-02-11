@@ -1222,11 +1222,11 @@
     }
 
 
-    &:nth-child(3) {
-        .block__list {
-            grid-template: repeat(4, 1fr) / repeat(2, 1fr);
-        }
-    }
+    // &:nth-child(3) {
+    //     .block__list {
+    //         grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    //     }
+    // }
     
 
     
