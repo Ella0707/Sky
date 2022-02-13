@@ -1,0 +1,247 @@
+.popular-services {
+  background-color: #fff;
+  padding: 16rem 0 18rem 0;
+
+  &--to-partners {
+    margin-top: 18rem;
+  }
+
+  &__title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 6rem;
+  }
+
+  &__title-block-text {
+  }
+
+  &__title {
+    margin-bottom: 1.3rem;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.1rem;
+    color: #292D32;
+  }
+
+  &__description {
+    width: 71rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: #292D32;
+  }
+
+  &__title-block-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23.4rem;
+    height: 6rem;
+    border-radius: 6rem;
+    border: 1px solid rgba(214, 214, 214, 1);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #292D32;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 37.5rem;
+    height: auto;
+
+    &:first-child > .popular-services__item-title-block {
+      border-radius: 4.5rem 0 0 0;
+    }
+
+    &:last-child > .popular-services__item-content-block {
+      border-radius: 0 0 6rem 0;
+    }
+  }
+
+  &__item-title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10rem;
+    padding: 0 3rem;
+    border: 1px solid rgba(224, 224, 224, 1);
+  }
+
+  &__item-title {
+    width: 27rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  &__item-link {
+    > svg {
+      width: 2.2rem;
+      height: 1.4rem;
+
+      > path {
+        stroke: #292D32;
+        stroke-width: 1.5px;
+      }
+    }
+  }
+
+  &__item-content-block {
+    flex-grow: 1;
+    padding: 3.5rem 3rem;
+    border: 1px solid rgba(224, 224, 224, 1);
+    background-color: #F8F8F8;
+  }
+
+  &__item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-bottom: 3.1rem;
+    background-color: rgba(33, 33, 41, 1);
+
+    > svg {
+      width: 2.2rem;
+      height: 2.2rem;
+
+      > path {
+        stroke: #FAAA3D;
+      }
+    }
+  }
+
+  &__item-image-block {
+    width: 21.5rem;
+    height: 22rem;
+    margin: 0 auto 3.8rem auto;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__item-description {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .popular-services {
+    &--to-partners {
+    }
+
+    &__title-block {
+      flex-direction: column;
+      align-items: normal;
+      margin-bottom: 8rem;
+    }
+
+    &__title-block-text {
+    }
+
+    &__title {
+      margin-bottom: 2rem;
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    &__description {
+      width: 100%;
+      margin-bottom: 4rem;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__title-block-button {
+      width: 34rem;
+      height: 9rem;
+      border-radius: 12rem;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+
+    &__cards {
+      justify-content: center;
+    }
+
+    &__item {
+      width: 33.5rem;
+
+      &:first-child > .popular-services__item-title-block {
+        border-radius: 4rem 0 0 0;
+      }
+
+      &:last-child > .popular-services__item-content-block {
+        border-radius: 0 0 7rem 0;
+      }
+    }
+
+    &__item-title-block {
+      position: relative;
+      align-items: flex-end;
+      min-height: 14rem;
+      padding: 2rem;
+    }
+
+    &__item-title {
+      width: 100%;
+      font-size: 3rem;
+      line-height: 3.3rem;
+    }
+
+    &__item-link {
+      position: absolute;
+      right: 1rem;
+      top: 1.5rem;
+
+      > svg {
+        width: 3rem;
+        height: 2rem;
+
+        > path {
+          stroke-width: 2.4px;
+        }
+      }
+    }
+
+    &__item-content-block {
+      padding: 3rem 2rem;
+    }
+
+    &__item-icon {
+      width: 4.8rem;
+      height: 4.8rem;
+      margin-bottom: 2.6rem;
+
+      > svg {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+
+    &__item-image-block {
+      width: 21.2rem;
+      height: 22rem;
+      margin-bottom: 4rem;
+    }
+
+    &__item-description {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+  }
+}

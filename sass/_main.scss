@@ -10,7 +10,7 @@
         width: 100%;
         position: relative;
         width: 150rem;
-        padding-top: 5rem;
+        padding-top: 4.5rem;
     }
 
     &__logo-wrap {
@@ -40,6 +40,10 @@
         font-size: 1.4rem;
         font-weight: 300;
         color: #ffffff;
+    }
+
+    &__menu {
+        padding-top: 2rem;
     }
 
     &__menu-list {

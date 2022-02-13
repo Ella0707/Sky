@@ -1,0 +1,204 @@
+.contacts {
+  &__container {
+    display: flex;
+  }
+
+  &__map {
+    width: 92.3rem;
+    height: 71rem;
+    margin-left: -21rem;
+    border-radius: 0 6rem 0 0;
+    overflow: hidden;
+
+    .ymaps-2-1-79-ground-pane {
+      filter: grayscale(0);
+    }
+  }
+
+  &__info-block {
+    width: 78.7rem;
+    padding: 5.7rem 0 0 7.3rem;
+  }
+
+  &__title {
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.1rem;
+  }
+
+  &__description {
+    margin-bottom: 6rem;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  &__contact-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 111.7rem;
+    padding: 6rem 0;
+    margin-left: -40rem;
+    border-radius: 6rem 0;
+    background-color: #fff;
+    box-shadow: 1.5rem 3rem 10rem 0 rgba(22, 11, 21, 0.08);
+  }
+
+  &__item {
+    height: auto;
+    padding: 0 6rem;
+    border-right: 1px solid rgba(224, 224, 224, 1);
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+
+  &__item-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-icon {
+    margin-right: 1rem;
+    margin-top: -0.5rem;
+
+    > svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    &--azure {
+      > svg > path {
+        stroke: #06A4D9;
+      }
+    }
+
+    &--red {
+      > svg > path {
+        stroke: #C81F41;
+      }
+    }
+
+    &--orange {
+      >svg > path {
+        stroke: #EF4023;
+      }
+    }
+  }
+
+  &__item-text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  &__item-phone {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+
+    > div:first-child {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .contacts {
+    margin-top: 10rem;
+
+    &__container {
+    }
+
+    &__map.map {
+      width: 35.6rem;
+      height: 158rem;
+      margin-left: -3rem;
+      border-radius: 0 7rem 0 0;
+
+      .ymaps-2-1-79-ground-pane {
+        filter: grayscale(0);
+      }
+    }
+
+    &__info-block {
+      width: 35.4rem;
+      padding: 0 4rem;
+    }
+
+    &__title {
+      margin-bottom: 2rem;
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    &__description {
+      margin-bottom: 8rem;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__contact-block {
+      flex-direction: column;
+      width: 44rem;
+      padding: 1rem 6rem;
+      margin-left: -12rem;
+      border-radius: 7rem 0;
+    }
+
+    &__item {
+      padding: 5rem 0;
+      border-right: none;
+      border-bottom: 1px solid rgba(224, 224, 224, 1);
+    }
+
+    &__item-title {
+      margin-bottom: 3rem;
+      font-size: 3.6rem;
+      line-height: 4rem;
+    }
+
+    &__item-info {
+      margin-bottom: 3rem;
+    }
+
+    &__item-icon {
+      margin-right: 2rem;
+      margin-top: -0.5rem;
+
+      > svg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    &__item-text {
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__item-phone {
+      font-size: 3rem;
+      line-height: 3.8rem;
+
+      > div:first-child {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.about-intro {
+  position: relative;
+  padding-bottom: 22rem;
+  padding-top: 21rem;
+}
+.about-intro__image-bg-block {
+  position: absolute;
+  top: 15rem;
+  right: 0;
+  z-index: -1;
+  width: 96rem;
+  height: 75.4rem;
+  border-radius: 30rem 0 0 6rem;
+  overflow: hidden;
+}
+.about-intro__title {
+  width: 80rem;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  font-size: 6rem;
+  line-height: 7.2rem;
+  color: #fff;
+}
+.about-intro__description {
+  width: 58.2rem;
+  margin-bottom: 11.1rem;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #fff;
+}
+.about-intro__info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 14rem;
+  padding: 3.5rem 4rem 4.2rem 4rem;
+  border-radius: 0 4.5rem;
+  background-color: #fff;
+}
+.about-intro__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8rem;
+}
+.about-intro__info-item:last-child {
+  margin-right: 0;
+}
+.about-intro__info-number {
+  margin-right: 2rem;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 6.3rem;
+  color: #292D32;
+}
+.about-intro__info-text {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #160B15;
+}
+
+@media (max-width: 48em) {
+  .about-intro {
+    padding-bottom: 0;
+  }
+  .about-intro__image-bg-block {
+    top: 54.8rem;
+    width: 59rem;
+    height: 47rem;
+    border-radius: 18rem 0 0 7rem;
+  }
+  .about-intro__title {
+    width: 100%;
+    margin-bottom: 3.8rem;
+    font-size: 5.4rem;
+    line-height: 6.8rem;
+  }
+  .about-intro__description {
+    width: 100%;
+    margin-bottom: 32rem;
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .about-intro__info-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 41.6rem;
+    padding: 0;
+    border-radius: 0 4rem;
+  }
+  .about-intro__info-item {
+    width: 35.6rem;
+    padding: 3rem 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .about-intro__info-item:last-child {
+    margin: 0 auto;
+    border: none;
+  }
+  .about-intro__info-number {
+    font-size: 5rem;
+    line-height: 6.3rem;
+    margin-right: 2rem;
+  }
+  .about-intro__info-text {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+}/*# sourceMappingURL=about-intro.css.map */

@@ -56,63 +56,15 @@ counter();
 
 
 // выбор акции стр. поддрежка ср бизнеса 
-// $(".payment__checkbox-label").click(function(e) {
-//   e.preventDefault();
-//   $(this).toggleClass('chose');
-//   $(".payment__select-item").toggleClass('chose');
-//   // $(this).removeClass('chose');
-// })
 
-// $('.payment__checkbox-label').click(function () {
-//   $('.payment__checkbox-label').parent().removeClass('chose');
-//   $(this).parent(this).addClass('chose');
-// });
-
-$('.payment__checkbox-input').change(function(){
-  if($(this).is(":checked")) {
-    $('.payment__select-item').addClass(this)('chose');
-    $('.payment__select-item').removeClass(this)('chose');
-
-  } else {
-      // $('.payment__select-item').removeClass("chose");
+$(".payment__checkbox-input").on('click', function () {
+  if ( $(this).is(':checked') ) {
+    $(this).parent(this).addClass('chose');
   }
-});
-
-// $(".payment__checkbox-input").on('click', function () {
- 
-//   if ( $(this).is(':checked') ) {
-//     $(".payment__checkbox-input" ).toggleClass('chose');
-//     $(this).addClass('chose');
-//   }
-
-//   else {
-//     // $(".payment__select-item").removeClass('chose');
-
-//   }
-// })
-
-// const checkbox = document.querySelector('.payment__checkbox-input');
-// const selectItem = document.querySelector('.payment__select-item');
-
-// checkbox.addEventListener('change', function () {
-//     if ( this.checked ) {
-//         selectItem.toggleClass('chose');
-//     } 
-//     // else 
-//     // selectItem.classList.removeClass('chose');
-// })
-
-// checkbox()
-
-// $('.payment__checkbox-label').change(function(){
-//   if($(this).is(":checked")) {
-//       $('.payment__select-item').addClass("chose");
-//   } else {
-//       $('.payment__select-item').removeClass("chose");
-//   }
-// });
-
-
+  else {
+    $(this).parent(this).removeClass('chose');
+  }
+})
 
 
 let reviewSlider = new Swiper('.reviews__content', {
@@ -273,5 +225,77 @@ const seeAlsoSlider = new Swiper('.seeAlso__slider', {
 });
 
 
+// Подсчет итоговой суммы
+let calc_amount = function () {
+  let amount = 0;
+  $('.calculate__calc-price.check').find('span').each(function () {
+      amount = amount + Number($(this).text().slice(0, -1));
+  });
+  $('.calculate__total').text(amount);
+};
 
+// Подсчет стоимости услуги
+let calculate = function (id, quantity) {
+  $('.' + id).each(function () {
+      let price = $(this).attr('price');
+      $(this).find('input').attr('value', price * quantity);
+      $(this).find('span').html(price * quantity + '<sup>₽</sup>');
+  });
+
+  calc_amount();
+};
+
+// Добавление класса для открытия контента для мобильной версии
+let toggleCalcPriceInfo = function () {
+  $('.calculate__calc-row').each(function () {
+      if ($(this).find('.calculate__amount').attr('value') > 0) {
+          $(this).addClass('show');
+      } else {
+          $(this).removeClass('show');
+      }
+  });
+};
+
+// Настройка кастомных чекбоксов
+$('.calculate__calc-price').click(function () {
+  $('.calculate__calc-price').each(function () {
+      if ($(this).find('input').prop('checked')) {
+          $(this).addClass('check');
+      } else {
+          $(this).removeClass('check');
+      }
+  });
+
+  calc_amount();
+});
+
+// Функция для выбора количества услуг
+$('.calculate__minus-icon').click(function () {
+  let count = $(this).parent().find('.calculate__amount');
+  if (count.attr('value') > 0) {
+      count.attr('value', count.attr('value') - 1);
+  }
+
+  calculate(count.attr('id'), count.attr('value'));
+  toggleCalcPriceInfo();
+});
+
+// Функция для выбора количества услуг
+$('.calculate__plus-icon').click(function () {
+  let count = $(this).parent().find('.calculate__amount');
+  count.attr('value', Number(count.attr('value')) + 1);
+
+  calculate(count.attr('id'), count.attr('value'));
+  toggleCalcPriceInfo();
+});
+
+$
+
+$('.calculate__checkbox').click(function () {
+  if ($(this).find('input').prop('checked')) {
+      $(this).addClass('check');
+  } else {
+      $(this).removeClass('check');
+  }
+});
 

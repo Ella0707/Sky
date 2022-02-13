@@ -1,0 +1,125 @@
+.about-intro {
+  position: relative;
+  padding-bottom: 22rem;
+  padding-top: 21rem;
+
+  &__image-bg-block {
+    position: absolute;
+    top: 15rem;
+    right: 0;
+    z-index: -1;
+    width: 96rem;
+    height: 75.4rem;
+    border-radius: 30rem 0 0 6rem;
+    overflow: hidden;
+  }
+
+  &__title {
+    width: 80rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: 7.2rem;
+    color: #fff;
+  }
+
+  &__description {
+    width: 58.2rem;
+    margin-bottom: 11.1rem;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #fff;
+  }
+
+  &__info-block {
+    display: flex;
+    width: fit-content;
+    min-height: 14rem;
+    padding: 3.5rem 4rem 4.2rem 4rem;
+    border-radius: 0 4.5rem;
+    background-color: #fff;
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    margin-right: 8rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__info-number {
+    margin-right: 2rem;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 6.3rem;
+    color: #292D32;
+  }
+
+  &__info-text {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: #160B15;
+  }
+}
+
+@media (max-width: 48em) {
+  .about-intro {
+    padding-bottom: 0;
+
+    &__image-bg-block {
+      top: 54.8rem;
+      width: 59rem;
+      height: 47rem;
+      border-radius: 18rem 0 0 7rem;
+    }
+
+    &__title {
+      width: 100%;
+      margin-bottom: 3.8rem;
+      font-size: 5.4rem;
+      line-height: 6.8rem;
+    }
+
+    &__description {
+      width: 100%;
+      margin-bottom: 32rem;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__info-block {
+      flex-direction: column;
+      width: 41.6rem;
+      padding: 0;
+      border-radius: 0 4rem;
+    }
+
+    &__info-item {
+      width: 35.6rem;
+      padding: 3rem 0;
+      margin: 0 auto;
+      border-bottom: 1px solid rgba(224, 224, 224, 1);
+
+      &:last-child {
+        margin: 0 auto;
+        border: none;
+      }
+    }
+
+    &__info-number {
+      font-size: 5rem;
+      line-height: 6.3rem;
+      margin-right: 2rem;
+    }
+
+    &__info-text {
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+    }
+  }
+}

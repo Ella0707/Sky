@@ -1,0 +1,128 @@
+.info-it-large {
+  &--support-for-large {
+    margin-top: 22rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image-block {
+    height: 62rem;
+    border-radius: 0 6rem;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--left {
+      width: 65.5rem;
+    }
+
+    &--right {
+      width: 18.3rem;
+    }
+  }
+
+  &__text-block {
+    width: 55rem;
+  }
+
+  &__title {
+    margin-bottom: 7.2rem;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.1rem;
+    color: #292D32;
+  }
+
+  &__description {
+    width: 44rem;
+    margin-left: 11rem;
+    margin-bottom: 8.5rem;
+    padding-left: 2.5rem;
+    border-left: 0.3rem solid rgba(41, 45, 50, 1);
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+
+    > p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23.4rem;
+    height: 6rem;
+    margin-left: 11rem;
+    border-radius: 6rem;
+    background-color: #212129;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #fff;
+  }
+}
+
+@media (max-width: 48em) {
+  .info-it-large {
+    &--support-for-large {
+      margin-top: 16rem;
+    }
+
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    &__image-block {
+      height: 43rem;
+      border-radius: 0 5rem;
+
+      &--left {
+        order: 2;
+        width: 51rem;
+      }
+
+      &--right {
+        order: 3;
+        width: 12rem;
+      }
+    }
+
+    &__text-block {
+      order: 1;
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 6rem;
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    &__description {
+      width: 100%;
+      font-size: 3rem;
+      line-height: 3.8rem;
+      padding-left: 4rem;
+      margin: 0 0 7rem 0;
+    }
+
+    &__link {
+      width: 34rem;
+      height: 9rem;
+      margin-bottom: 8rem;
+      margin-left: 0;
+      border-radius: 12rem;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+  }
+}

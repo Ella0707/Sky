@@ -1,0 +1,460 @@
+.banner {
+    &.subscription {
+        height: 84.5rem;
+        margin-bottom: 18rem;
+
+        .banner {
+            &__background {
+                top: 14.6rem;
+                left: auto;
+                right: 0;
+                width: 93.9rem;
+                height: 69.5rem;
+            }
+
+            &__inner {
+                position: relative;
+                padding-top: 12rem;
+            }
+
+            &__text-block {
+                width: 64rem;
+                height: 36.6rem;
+            }
+            
+            &__title {
+                margin-bottom: 4.8rem;
+            }
+
+            &__subtitle {
+                width: 51rem;
+            }
+
+            &__advantage {
+                width: 134.6rem;
+                position: static;
+                padding: 3.5rem 2rem 3.6rem 4.5rem;
+                justify-content: start;
+                box-shadow: -1rem 1rem 6rem rgba(22, 11, 21, 0.05);
+                border-radius: 0px 4.5rem;
+            }
+
+            &__advantage-box {
+                width: 23rem;
+                padding: 0;
+
+                &:not(:last-child) {
+                    display: grid;
+                    grid-template-areas: 
+                    "a b"
+                    "a c";
+                    grid-template-columns: 5rem 1fr;
+                    margin-right: 5.2rem;
+                    width: 29rem;
+
+                    &::after {
+                        width: 0;
+                        height: 0;
+                    }
+
+                }
+            }
+
+            &__advantage-img {
+                width: 3.2rem;
+                height: 3.2rem;
+                margin-bottom: 0;
+                grid-area: a;
+                align-self: start;
+            }
+
+            &__advantage-title {
+                font-size: 1.8rem;
+                text-align: left;
+                margin-bottom: 0.5rem;
+                grid-area: b;
+            }
+
+            &__advantage-subtitle {
+                font-size: 1.6rem;
+                text-align: left;
+                grid-area: c;
+            }
+
+            &__btn {
+                align-self: center;
+
+            }
+        }
+    }
+}
+
+
+
+.in-price {
+    margin-bottom: 22rem;
+
+    
+    &__inner {
+        display: flex;
+    
+    }
+    
+    &__left-photo {
+        height: 60rem;
+        width: 65.5rem;
+        border-radius: 0 6rem 0 6rem;
+        margin-right: 5.6rem;
+
+
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    
+    }
+    
+    &__text-block {
+        margin-right: 5.5rem;
+        width: 55.2rem;
+    }
+    
+    &__title {
+        font-size: 4rem;
+        font-weight: 700;
+        color: rgba(41, 45, 50, 1);
+        margin-bottom: 7rem;
+        line-height: 1.268;
+    
+    }
+    
+    &__text-wrap {
+        margin-left: 7.5rem;
+        padding-left: 2rem;
+        border-left: 0.3rem solid rgba(41, 45, 50, 1);
+        margin-bottom: 8.5rem;
+        width: 46rem;
+        line-height: 1.268;
+    }
+    
+    &__par {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: rgba(22, 11, 21, 1);
+
+        &:not(:last-child) {
+            margin-bottom: 2.5rem;
+        }
+    
+    }
+    
+    &__btn {
+        margin-left: 7.5rem;
+    
+    }
+    .btn {
+    }
+    .btn--black {
+    }
+    
+    &__right-photo {
+        height: 60rem;
+        width: 18.3rem;
+        border-radius: 0 6rem 0 6rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
+}
+
+
+
+.benefits {
+
+    margin-bottom: 20rem;
+    
+    &__top {
+        display: flex;
+        margin-bottom: 3.5rem;
+    
+    }
+    
+    &__text-block {
+        width: 67rem;
+        margin-right: 10rem;
+    
+    }
+    
+    &__title {
+        font-size: 4rem;
+        font-weight: 700;
+        color: rgba(41, 45, 50, 1);
+        margin-bottom: 3rem;
+    
+    }
+    
+    &__subtitle {
+        font-size: 2rem;
+        font-weight: 400;
+        color: rgba(41, 45, 50, 1);
+        width: 58rem;
+        line-height: 1.268;
+    }
+    
+    &__box {
+        background: #FFFFFF;
+        box-shadow: 1.5rem 3rem 10rem rgba(22, 11, 21, 0.08);
+        border-radius: 0px 0px 4.5rem 0px;
+        border-top: 0.5rem solid rgba(33, 33, 41, 1);
+        width: 34.5rem;
+
+        padding: 3.9rem 3rem 5rem 3rem;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    
+    }
+    
+    &__box-img {
+        width: 4.6rem;
+        height: 4.6rem;
+        margin-bottom: 2.8rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__box-title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: rgba(22, 11, 21, 1);
+        margin-bottom: 1rem;
+    
+    }
+    
+    &__box-subtitle {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: rgba(22, 11, 21, 1);
+        line-height: 1.268;
+    }
+    
+    &__down {
+        display: flex;
+    }
+}
+
+
+
+.scroll {
+    margin-bottom: 18rem;
+
+    
+    &__content {
+
+    
+    }
+    
+    &__title-wrap {
+        margin-bottom: 4rem;
+    
+    }
+
+    .block__list-title {
+        width: 95%;
+        line-height: 1.3;
+    }
+    
+    &__title {
+    
+    }
+
+    
+    &__subtitle {
+    
+    }
+    
+    &__block {
+        position: relative;
+    
+    }
+
+}
+
+.garant {
+
+    margin-bottom: 23rem;
+    padding-top: 18rem;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 171.1rem;
+        height: 75.9rem;
+        background: #FFFFFF;
+        border-radius: 0 6rem 0 0;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    
+    &__content {
+        display: flex;
+        position: relative;
+    
+    }
+    
+    &__photo-block {
+        width: 71.3rem;
+        height: 57.9rem;
+        border-radius: 0 6rem 0 0;
+        margin-right: 7.3rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    
+    }
+    
+    &__text-block {
+        width: 63.9rem;
+    
+    }
+    
+    &__title {
+        font-size: 4rem;
+        font-weight: 700;
+        color: rgba(41, 45, 50, 1);
+        margin-bottom: 2.8rem;
+        line-height: 1.268;
+    
+    }
+    
+    &__subtitle {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: rgba(22, 11, 21, 1);
+        margin-bottom: 1.5rem;
+        line-height: 1.268;
+    
+    }
+    
+    &__list {
+        font-size: 2rem;
+        font-weight: 300;
+        color: rgba(22, 11, 21, 1);
+        list-style: none;
+        counter-reset: num;
+        line-height: 1.268;
+        margin: 0;
+        padding-left: 3.5rem;
+    
+    }
+    
+    &__item {
+        position: relative;
+        counter-increment: num;
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+
+        &:nth-child(-n+9)::before {
+            content: "0" counter(num) "";
+        }
+
+        &::before {
+        content: counter(num) "";
+        color: rgba(119, 119, 119, 1);
+        position: absolute;
+        left: -3.3rem;
+        top: 0;
+        text-align: right;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    
+    }
+    
+    &__mini-block {
+        width: 34rem;
+        background: #FFFFFF;
+        box-shadow: 2rem 2rem 10rem rgba(22, 11, 21, 0.1);
+        border-radius: 4.5rem 0;
+        padding: 5.8rem 3rem 2.6rem 4rem;
+
+        position: absolute;
+        bottom: -7rem;
+        left: 36%;
+    }
+    
+    &__icon {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        box-shadow: 0 0 6rem rgba(22, 11, 21, 0.2);
+        background: #FFFFFF;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: -4rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__mini-block-text {
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: rgba(22, 11, 21, 1);
+        text-align: center;
+        line-height: 1.268;
+    }
+}
+
+
+.choose {
+    &.page-subscription {
+        margin-bottom: 18.2rem;
+    }
+}
+
+
+.partners {
+    &.page-subscription {
+        margin-bottom: 16rem;
+    }
+}
+
+
+.reviews {
+    &.page-subscription {
+        margin-bottom: 19.7rem;
+    }
+}

@@ -14,6 +14,21 @@
   &--article {
     height: 77.9rem;
   }
+
+  &--about {
+    height: 80rem;
+    background: linear-gradient(135.64deg, #656568 -41.37%, #212129 51.66%);
+  }
+
+  &--support-for-large {
+    height: 77.5rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 .banner.background--usefulArticles {
@@ -134,6 +149,14 @@
 
     &--article {
       height: 80rem;
+    }
+
+    &--about {
+      height: 94.4rem;
+    }
+
+    &--support-for-large {
+      height: 146.4rem;
     }
   }
 }
