@@ -160,6 +160,14 @@ $(".menu-item-open").click(function(e) {
 })
 
 
+// открытие доп информации в калькуляторе старницы услуг
+$(document).ready(function () {
+  $('.spoller-item-wrap').click(function (event) {
+      $(this).toggleClass('active').next().slideToggle(300);
+  });
+});
+
+
 
 
 const seeAlsoSlider = new Swiper('.seeAlso__slider', {
