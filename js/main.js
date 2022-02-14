@@ -160,6 +160,66 @@ $(".menu-item-open").click(function(e) {
 })
 
 
+// открытие доп информации в калькуляторе страницы услуг
+$(document).ready(function () {
+  $('.spoller-item-wrap').click(function (event) {
+      $(this).toggleClass('active').next().slideToggle(300);
+  });
+});
+
+// Табы расчет стоимости страница услуг
+const tabsBtn   = document.querySelectorAll(".tab-btn");
+const tabsItems = document.querySelectorAll(".tab-item");
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+    item.addEventListener("click", function() {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+
+        if( ! currentBtn.classList.contains('active') ) {
+            tabsBtn.forEach(function(item) {
+                item.classList.remove('active');
+            });
+    
+            tabsItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+    
+            currentBtn.classList.add('active');
+            currentTab.classList.add('active');
+        }
+    });
+}
+
+document.querySelector('.tab-btn').click();
+
+
+
+// range-slider
+
+var $range = $(".js-range-slider"),
+    $input = $(".js-input"),
+    min = 0;
+    max = 80;
+    
+
+$range.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $input.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $input.prop("value", data.from);
+    }
+});
+
+
 
 
 const seeAlsoSlider = new Swiper('.seeAlso__slider', {
