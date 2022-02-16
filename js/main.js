@@ -168,40 +168,201 @@ $(document).ready(function () {
 });
 
 // Табы расчет стоимости страница услуг
-const tabsBtn   = document.querySelectorAll(".tab-btn");
-const tabsItems = document.querySelectorAll(".tab-item");
+// const tabsBtn   = document.querySelectorAll(".tab-btn");
+// const tabsItems = document.querySelectorAll(".tab-item");
 
-tabsBtn.forEach(onTabClick);
+// tabsBtn.forEach(onTabClick);
 
-function onTabClick(item) {
-    item.addEventListener("click", function() {
-        let currentBtn = item;
-        let tabId = currentBtn.getAttribute("data-tab");
-        let currentTab = document.querySelector(tabId);
+// function onTabClick(item) {
+//     item.addEventListener("click", function() {
+//         let currentBtn = item;
+//         let tabId = currentBtn.getAttribute("data-tab");
+//         let currentTab = document.querySelector(tabId);
 
-        if( ! currentBtn.classList.contains('active') ) {
-            tabsBtn.forEach(function(item) {
-                item.classList.remove('active');
-            });
+//         if( ! currentBtn.classList.contains('active') ) {
+//             tabsBtn.forEach(function(item) {
+//                 item.classList.remove('active');
+//             });
     
-            tabsItems.forEach(function(item) {
-                item.classList.remove('active');
-            });
+//             tabsItems.forEach(function(item) {
+//                 item.classList.remove('active');
+//             });
     
-            currentBtn.classList.add('active');
-            currentTab.classList.add('active');
-        }
-    });
+//             currentBtn.classList.add('active');
+//             currentTab.classList.add('active');
+//         }
+//     });
+// }
+
+// document.querySelector('.tab-btn').click();
+
+
+// const tabsBtnParametrs   = document.querySelectorAll(".tab-parametrs-btn");
+// const tabsItemsParametrs = document.querySelectorAll(".tab-parametrs-item");
+
+// tabsBtnParametrs.forEach(onTabClick);
+
+// function onTabClick(item) {
+//     item.addEventListener("click", function() {
+//         let currentBtn = item;
+//         let tabId = currentBtn.getAttribute("data-tab");
+//         let currentTab = document.querySelector(tabId);
+
+//         if( ! currentBtn.classList.contains('open') ) {
+//           tabsBtnParametrs.forEach(function(item) {
+//                 item.classList.remove('open');
+//             });
+    
+//             tabsItemsParametrs.forEach(function(item) {
+//                 item.classList.remove('open');
+//             });
+    
+//             currentBtn.classList.add('open');
+//             currentTab.classList.add('open');
+//         }
+//     });
+// }
+
+// document.querySelector('.tab-parametrs-btn').click();
+
+// $(".tabs").each(function(){
+//   var tabs = $(this);
+//   tabs.find(".tab").each(function(){
+//     var post=$(this);
+//     var i=0;
+//     post.find(".question").off("click").on("click",function(){
+//       if(i===0){
+//         post.addClass("active");
+//         i=1;
+//       }else{
+//         post.removeClass("active");
+//         i=0;
+//       }
+//       return false;
+//     });
+//   });
+// });
+
+class Tabs {
+  constructor(root) {
+      this.root = root;
+      this.list = this.root.querySelector(':scope > [data-list]');
+      this.buttons = new Map([...this.list.querySelectorAll(':scope > [data-target]')]
+          .map(entry => [
+              entry.dataset.target,
+              entry,
+          ])
+      );
+      this.containers = new Map([...this.root.querySelectorAll(':scope > [data-tab]')]
+          .map(entry => [entry.dataset.tab, entry])
+      );
+      this.salt = Math.random().toString(36).slice(2);
+      this.current = null;
+      this.active = null;
+  }
+
+  select(name) {
+      const keys = [...this.buttons.keys()];
+
+      for (let [key, button] of this.buttons.entries()) {
+          button.setAttribute('aria-selected', key === name);
+      }
+
+      for (let [key, container] of this.containers.entries()) {
+          if (key === name) {
+              container.removeAttribute('hidden');
+          } else {
+              container.setAttribute('hidden', true);
+          }
+      }
+
+      this.active = keys.indexOf(name);
+  }
+
+  init() {
+      const keys = [...this.buttons.keys()];
+
+      this.list.setAttribute('role', 'tablist');
+
+      this.list.addEventListener('keydown', event => {
+          if (event.code === 'Home') {
+              event.preventDefault();
+
+              this.buttons.get(keys[0]).focus();
+          }
+
+          if (event.code === 'End') {
+              event.preventDefault();
+
+              this.buttons.get(keys[keys.length - 1]).focus();
+          }
+
+          if (event.code === 'ArrowLeft') {
+              event.preventDefault();
+
+              this.buttons.get(keys[Math.max(0, this.current - 1)]).focus();
+          }
+
+          if (event.code === 'ArrowRight') {
+              event.preventDefault();
+
+              this.buttons.get(keys[Math.min(keys.length - 1, this.current + 1)]).focus();
+          }
+      });
+
+      for (let [key, button] of this.buttons.entries()) {
+          button.setAttribute('tabindex', '0');
+          button.setAttribute('id', `button_${this.salt}_${key}`);
+          button.setAttribute('role', 'tab');
+          button.setAttribute('aria-controls', `container_${this.salt}_${key}`);
+
+          button.addEventListener('click', event => {
+              event.preventDefault();
+
+              this.select(key);
+          });
+
+          button.addEventListener('focus', event => {
+              this.current = keys.indexOf(key);
+          });
+
+          button.addEventListener('keypress', event => {
+              if (event.code === 'Enter' || event.code === 'Space') {
+                  event.preventDefault();
+
+                  this.select(key);
+              }
+          });
+      }
+
+      for (let [key, container] of this.containers.entries()) {
+          container.setAttribute('id', `container_${this.salt}_${key}`);
+          container.setAttribute('role', 'tabpanel');
+          container.setAttribute('aria-labelledby', `button_${this.salt}_${key}`);
+      }
+
+      this.select(keys[0]);
+  }
+
+  static create(element) {
+      const instance = new Tabs(element);
+      instance.init();
+
+      return instance;
+  }
 }
 
-document.querySelector('.tab-btn').click();
+const containers = document.querySelectorAll('[data-tabs]');
 
-
+for (let container of containers) {
+  const tabs = Tabs.create(container);
+  console.log(tabs)
+}
 
 // range-slider
 
-var $range = $(".js-range-slider"),
-    $input = $(".js-input"),
+var $range = $(".cpu-slider"),
+    $input = $(".cpu-input"),
     min = 0;
     max = 80;
     
@@ -216,6 +377,82 @@ $range.ionRangeSlider({
     },
     onChange: function(data) {
         $input.prop("value", data.from);
+    }
+});
+
+var $ramRange = $(".ram-slider"),
+    $ramInput = $(".ram-input"),
+    min = 0;
+    max = 640;
+    
+
+$ramRange.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $ramRange.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $ramInput.prop("value", data.from);
+    }
+});
+
+var $sasRange = $(".sas-slider"),
+    $sasInput = $(".sas-input"),
+    min = 0;
+    max = 4000;
+    
+
+$sasRange.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $sasRange.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $sasInput.prop("value", data.from);
+    }
+});
+
+var $ssdRange = $(".ssd-slider"),
+    $ssdInput = $(".ssd-input"),
+    min = 0;
+    max = 4000;
+    
+
+$ssdRange.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $ssdRange.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $ssdInput.prop("value", data.from);
+    }
+});
+
+var $hddRange = $(".hdd-slider"),
+    $hddInput = $(".hdd-input"),
+    min = 0;
+    max = 4000;
+    
+
+$hddRange.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $hddRange.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $hddInput.prop("value", data.from);
     }
 });
 
