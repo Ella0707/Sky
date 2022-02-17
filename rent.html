@@ -787,9 +787,9 @@
         <section class="count">
             <div class="container">
                 <div class="count__title">Рассчитать стоимость аренды виртуального сервера</div>
-                <div class="count__content tabs" data-tabs>
+                <div class="count__content-top tabs" data-tabs>
                     <div class="tabs__list" data-list>
-                        <button class="tabs__button" data-target="tab1">Расчёт стоимости облачного офиса</button>
+                        <button class="tabs__button active" data-target="tab1">Расчёт стоимости облачного офиса</button>
                         <button class="tabs__button" data-target="tab3">Рассчитать стоимость вручную</button>
                     </div>
                     <div class="tabs__container" data-tab="tab1">
@@ -882,7 +882,7 @@
                                     </div>
                                     <div class="tabs__auto-item">
                                         <div class="tabs__auto-item-title-wrap">
-                                            <div class="tabs__auto-item-title">Почтовый сервер Exchange</div>
+                                            <div class="tabs__auto-item-title">Первичная настройка</div>
                                             <a href="" class="tabs__auto-item-more">i</a>
                                         </div>
                                         <label class="tabs__auto-switch">
@@ -1030,7 +1030,7 @@
                                         параметры</button>
                                 </div>
                                 <div class="tabs__container" data-tab="nested-tab1">
-                                    <div class="tabs__container-wrap">
+                                    <!-- <div class="tabs__container-wrap"> -->
                                         <div class="tabs__manually-parametrs-wrap tab-parametrs-item "
                                             data-tab="nested-tab_1">
                                             <div class="tabs__manually-item">
@@ -1126,13 +1126,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tabs__manually-right">
+                                        <!-- <div class="tabs__manually-right">
 
-                                        </div>
-                                    </div>
+                                        </div> -->
+                                    <!-- </div> -->
                                 </div>
                                 <div class="tabs__container" data-tab="nested-tab2">
-                                    <div class="tabs__container-wrap">
+                                    <!-- <div class="tabs__container-wrap"> -->
                                         <div class="tabs__manually-parametrs-wrap tab-parametrs-item"
                                             data-tab="nested-tab_2">
                                             <div class="tabs__manually-item">
@@ -1143,15 +1143,15 @@
                                                 <div class="tabs__manually-range-wrapper">
                                                     <div class="tabs__manually-range-wrap">
                                                         <div class="tabs__manually-range">
-                                                            <input type="text" class="cpu-slider" value="0"
+                                                            <input type="text" class="traffic-slider" value="0"
                                                                 id="range-1" />
                                                         </div>
                                                     </div>
                                                     <div class="tabs__manually-range-value extra-controls">
-                                                        <input type="text" class="cpu-input range-input" value="0"
+                                                        <input type="text" class="traffic-input range-input" value="0"
                                                             id="input-1" />
                                                     </div>
-                                                    <div class="tabs__manually-range-unit">2,4 ГГц</div>
+                                                    <div class="tabs__manually-range-unit">Мбит/сек</div>
                                                 </div>
                                             </div>
 
@@ -1163,13 +1163,13 @@
                                                 <div class="tabs__manually-range-wrapper">
                                                     <div class="tabs__manually-range-wrap">
                                                         <div class="tabs__manually-range">
-                                                            <input type="text" class="ram-slider" value="0" />
+                                                            <input type="text" class="ip-slider" value="0" />
                                                         </div>
                                                     </div>
                                                     <div class="tabs__manually-range-value extra-controls">
-                                                        <input type="text" class="ram-input range-input" value="0" />
+                                                        <input type="text" class="ip-input range-input" value="0" />
                                                     </div>
-                                                    <div class="tabs__manually-range-unit">Гб</div>
+                                                    <div class="tabs__manually-range-unit">шт.</div>
                                                 </div>
                                             </div>
 
@@ -1181,54 +1181,103 @@
                                                 <div class="tabs__manually-range-wrapper">
                                                     <div class="tabs__manually-range-wrap">
                                                         <div class="tabs__manually-range">
-                                                            <input type="text" class="sas-slider" value="0" />
+                                                            <input type="text" class="server-slider" value="0" />
                                                         </div>
                                                     </div>
                                                     <div class="tabs__manually-range-value extra-controls">
-                                                        <input type="text" class="sas-input range-input" value="0" />
+                                                        <input type="text" class="server-input range-input" value="0" />
                                                     </div>
-                                                    <div class="tabs__manually-range-unit">Гб</div>
+                                                    <div class="tabs__manually-range-unit">шт.</div>
                                                 </div>
+                                            </div>
+
+                                            <div class="tabs__manually-item auto-switch">
+                                                <div class="tabs__manually-item-title-wrap">
+                                                    <div class="tabs__manually-item-title">Поддержка виртуального сервера
+                                                    </div>
+                                                </div>
+                                                <label class="tabs__auto-switch">
+                                                    <input type="checkbox" hidden="">
+                                                    <span class="tabs__auto-switch-row">
+                                                        <span class="tabs__auto-switch-icon">
+                                                        </span>
+                                                    </span>
+                                                </label>
                                             </div>
 
                                             <div class="tabs__manually-item">
                                                 <div class="tabs__manually-item-title-wrap">
-                                                    <div class="tabs__manually-item-title">Дисковое пространство SSD
+                                                    <div class="tabs__manually-item-title">Лицензия Microsoft Office Standart
                                                     </div>
                                                 </div>
                                                 <div class="tabs__manually-range-wrapper">
                                                     <div class="tabs__manually-range-wrap">
                                                         <div class="tabs__manually-range">
-                                                            <input type="text" class="ssd-slider" value="0" />
+                                                            <input type="text" class="office-slider" value="0" />
                                                         </div>
                                                     </div>
                                                     <div class="tabs__manually-range-value extra-controls">
-                                                        <input type="text" class="ssd-input range-input" value="0" />
+                                                        <input type="text" class="office-input range-input" value="0" />
                                                     </div>
-                                                    <div class="tabs__manually-range-unit">Гб</div>
+                                                    <div class="tabs__manually-range-unit">шт.</div>
                                                 </div>
                                             </div>
 
                                             <div class="tabs__manually-item">
                                                 <div class="tabs__manually-item-title-wrap">
-                                                    <div class="tabs__manually-item-title">Резервное копирование HDD
+                                                    <div class="tabs__manually-item-title">Лицензия MS SQL (SPLA лицензия)
                                                     </div>
                                                 </div>
                                                 <div class="tabs__manually-range-wrapper">
                                                     <div class="tabs__manually-range-wrap">
                                                         <div class="tabs__manually-range">
-                                                            <input type="text" class="hdd-slider" value="0" />
+                                                            <input type="text" class="SQL-slider" value="0" />
                                                         </div>
                                                     </div>
                                                     <div class="tabs__manually-range-value extra-controls">
-                                                        <input type="text" class="hdd-input range-input" value="0" />
+                                                        <input type="text" class="SQL-input range-input" value="0" />
                                                     </div>
-                                                    <div class="tabs__manually-range-unit">Гб/сут.</div>
+                                                    <div class="tabs__manually-range-unit">шт.</div>
                                                 </div>
                                             </div>
+
+                                            <div class="tabs__manually-item auto-switch">
+                                                <div class="tabs__manually-item-title-wrap">
+                                                    <div class="tabs__manually-item-title">Сервер для печати
+                                                    </div>
+                                                </div>
+                                                <label class="tabs__auto-switch">
+                                                    <input type="checkbox" hidden="">
+                                                    <span class="tabs__auto-switch-row">
+                                                        <span class="tabs__auto-switch-icon">
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+
+                                            
+                                            <div class="tabs__manually-item">
+                                                <div class="tabs__manually-item-title-wrap">
+                                                    <div class="tabs__manually-item-title">Почта Exchange Standard
+                                                    </div>
+                                                </div>
+                                                <div class="tabs__manually-range-wrapper">
+                                                    <div class="tabs__manually-range-wrap">
+                                                        <div class="tabs__manually-range">
+                                                            <input type="text" class="mail-slider" value="0" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabs__manually-range-value extra-controls">
+                                                        <input type="text" class="mail-input range-input" value="0" />
+                                                    </div>
+                                                    <div class="tabs__manually-range-unit">шт.</div>
+                                                </div>
+                                            </div>
+
+
                                         </div>
 
-                                    </div>
+                                    <!-- </div> -->
                                 </div>
                             </div>
 
@@ -1297,6 +1346,48 @@
                             </div>
                         </div>
 
+                    </div>
+                </div>
+                <div class="count__bottom">
+                    <div class="count__outsourcing">
+                        <div class="count__outsourcing-title">Стоимость IT аутсорсинга:</div>
+                        <div class="count__outsourcing-prices">
+                            <div class="count__outsourcing-new-price">18 000 <sup>₽/мес</sup></div>
+                            <div class="count__outsourcing-old-price">25 000 <sup>₽/мес</sup></div>
+                        </div>
+                    </div>
+                    <div class="count__application">
+                        <div class="count__application-form">
+                            <div class="count__application-title-wrap">
+                                <div class="count__application-title">Получите предложение на почту:</div>
+                                <label class="count__application-label">
+                                        Согласие на обработку
+                                        персональных данных
+                                    <input class="count__application-checkbox-input" type="checkbox" name="select" id="">
+                                    <span class="count__application-checkbox-style">
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="count__application-info-wrap">
+                                <label class="count__application-input-wrap">
+                                    <svg class="count__application-input-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2C14.4501 2 16.4401 3.99 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.15997 14.56C4.73997 16.18 4.73997 18.82 7.15997 20.43C9.90997 22.27 14.42 22.27 17.17 20.43C19.59 18.81 19.59 16.17 17.17 14.56C14.43 12.73 9.91997 12.73 7.15997 14.56Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <input class="count__application-input" type="text" placeholder="Ваше имя" name="" id="">
+                            </label>
+                            <label class="count__application-input-wrap">
+                                <svg class="count__application-input-img" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.3769 20.5H7.15518C4.08868 20.5 2.04434 19 2.04434 15.5V8.5C2.04434 5 4.08868 3.5 7.15518 3.5H17.3769C20.4434 3.5 22.4877 5 22.4877 8.5V15.5C22.4877 19 20.4434 20.5 17.3769 20.5Z" stroke="" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17.3769 9L14.1775 11.5C13.1246 12.32 11.3972 12.32 10.3443 11.5L7.15518 9" stroke="" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            <input class="count__application-input input-email" type="text" placeholder="Ваш Email" name="" id="">
+                            </label>
+                            <a class="count__application-btn" href="">
+                                <img src="./img/arrow-right-white.svg" alt="">
+                            </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

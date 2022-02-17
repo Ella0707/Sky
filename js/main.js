@@ -167,82 +167,9 @@ $(document).ready(function () {
   });
 });
 
-// Табы расчет стоимости страница услуг
-// const tabsBtn   = document.querySelectorAll(".tab-btn");
-// const tabsItems = document.querySelectorAll(".tab-item");
-
-// tabsBtn.forEach(onTabClick);
-
-// function onTabClick(item) {
-//     item.addEventListener("click", function() {
-//         let currentBtn = item;
-//         let tabId = currentBtn.getAttribute("data-tab");
-//         let currentTab = document.querySelector(tabId);
-
-//         if( ! currentBtn.classList.contains('active') ) {
-//             tabsBtn.forEach(function(item) {
-//                 item.classList.remove('active');
-//             });
-    
-//             tabsItems.forEach(function(item) {
-//                 item.classList.remove('active');
-//             });
-    
-//             currentBtn.classList.add('active');
-//             currentTab.classList.add('active');
-//         }
-//     });
-// }
-
-// document.querySelector('.tab-btn').click();
 
 
-// const tabsBtnParametrs   = document.querySelectorAll(".tab-parametrs-btn");
-// const tabsItemsParametrs = document.querySelectorAll(".tab-parametrs-item");
-
-// tabsBtnParametrs.forEach(onTabClick);
-
-// function onTabClick(item) {
-//     item.addEventListener("click", function() {
-//         let currentBtn = item;
-//         let tabId = currentBtn.getAttribute("data-tab");
-//         let currentTab = document.querySelector(tabId);
-
-//         if( ! currentBtn.classList.contains('open') ) {
-//           tabsBtnParametrs.forEach(function(item) {
-//                 item.classList.remove('open');
-//             });
-    
-//             tabsItemsParametrs.forEach(function(item) {
-//                 item.classList.remove('open');
-//             });
-    
-//             currentBtn.classList.add('open');
-//             currentTab.classList.add('open');
-//         }
-//     });
-// }
-
-// document.querySelector('.tab-parametrs-btn').click();
-
-// $(".tabs").each(function(){
-//   var tabs = $(this);
-//   tabs.find(".tab").each(function(){
-//     var post=$(this);
-//     var i=0;
-//     post.find(".question").off("click").on("click",function(){
-//       if(i===0){
-//         post.addClass("active");
-//         i=1;
-//       }else{
-//         post.removeClass("active");
-//         i=0;
-//       }
-//       return false;
-//     });
-//   });
-// });
-
+// Табы в табах калькулятор
 class Tabs {
   constructor(root) {
       this.root = root;
@@ -359,6 +286,8 @@ for (let container of containers) {
   console.log(tabs)
 }
 
+
+
 // range-slider
 
 var $range = $(".cpu-slider"),
@@ -455,6 +384,142 @@ $hddRange.ionRangeSlider({
         $hddInput.prop("value", data.from);
     }
 });
+
+
+var $trafficRange = $(".traffic-slider"),
+    $trafficInput = $(".traffic-input"),
+    min = 0;
+    max = 4000;
+    
+
+$trafficRange.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $trafficRange.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $trafficInput.prop("value", data.from);
+    }
+});
+
+
+var $ipRange = $(".ip-slider"),
+    $ipInput = $(".ip-input"),
+    min = 0;
+    max = 4000;
+    
+
+$ipRange.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $ipRange.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $ipInput.prop("value", data.from);
+    }
+});
+
+
+var $serverRange = $(".server-slider"),
+    $serverInput = $(".server-input"),
+    min = 0;
+    max = 4000;
+    
+
+$serverRange.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $serverRange.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $serverInput.prop("value", data.from);
+    }
+});
+
+
+var $officeRange = $(".office-slider"),
+    $officeInput = $(".office-input"),
+    min = 0;
+    max = 4000;
+    
+
+$officeRange.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $officeRange.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $officeInput.prop("value", data.from);
+    }
+});
+
+
+var $SQLRange = $(".SQL-slider"),
+    $SQLInput = $(".SQL-input"),
+    min = 0;
+    max = 4000;
+    
+
+$SQLRange.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $SQLRange.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $SQLInput.prop("value", data.from);
+    }
+});
+
+
+var $mailRange = $(".mail-slider"),
+    $mailInput = $(".mail-input"),
+    min = 0;
+    max = 4000;
+    
+
+$mailRange.ionRangeSlider({
+    type: "single",
+    skin: "round",
+    min: min,
+    max: max,
+    onStart: function(data) {
+        $mailRange.prop("value", data.from);
+    },
+    onChange: function(data) {
+        $mailInput.prop("value", data.from);
+    }
+});
+
+// переключение класса актив у  табов в калькуляторе 
+$(".tabs__button").click(function(e) {
+    e.preventDefault();
+    $(".tabs__button").removeClass('active');
+    $(this).addClass('active');
+  })
+
+
+// переключение класса актив у внутренних табов в калькуляторе 
+$(".tabs__button-inner").click(function(e) {
+    e.preventDefault();
+    $(".tabs__button-inner").removeClass('active');
+    $(this).addClass('active');
+  })
+
 
 
 
@@ -576,6 +641,8 @@ $('.calculate__minus-icon').click(function () {
   calculate(count.attr('id'), count.attr('value'));
   toggleCalcPriceInfo();
 });
+
+
 
 // Функция для выбора количества услуг
 $('.calculate__plus-icon').click(function () {
