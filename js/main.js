@@ -521,7 +521,41 @@ $(".tabs__button-inner").click(function(e) {
   })
 
 
+  $(".packages__content-title").click(function(e) {
+    e.preventDefault();
+    $(".packages__content-title").removeClass('active');
+    $(this).addClass('active');
+  })
 
+
+//   Табы в цене стр услуги
+const tabsBtn   = document.querySelectorAll(".tab-btn");
+const tabsItems = document.querySelectorAll(".tab-item");
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+    item.addEventListener("click", function() {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+
+        if( ! currentBtn.classList.contains('active') ) {
+            tabsBtn.forEach(function(item) {
+                item.classList.remove('active');
+            });
+    
+            tabsItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+    
+            currentBtn.classList.add('active');
+            currentTab.classList.add('active');
+        }
+    });
+}
+
+document.querySelector('.tab-btn').click();
 
 
 const seeAlsoSlider = new Swiper('.seeAlso__slider', {
