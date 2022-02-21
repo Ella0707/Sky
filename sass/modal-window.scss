@@ -1,0 +1,274 @@
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(33, 33, 41, 0.7);
+
+  &.show {
+    display: flex;
+  }
+
+  &__container {
+    position: relative;
+    width: 105rem;
+    min-height: 59rem;
+    padding: 8rem 9rem 0 29rem;
+    border-radius: 0 6rem;
+    background-color: #fff;
+    color: #292D32;
+
+    &--callback {
+      width: 96rem;
+      min-height: 45.5rem;
+      padding: 8rem 8rem 0 29rem;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+    cursor: pointer;
+
+    > svg {
+      width: 2.2rem;
+      height: 2.2rem;
+
+      > path {
+        stroke: #292D32;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.1rem;
+  }
+
+  &__description {
+    margin-bottom: 4.4rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__input-block {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 32rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 1.5px solid rgba(214, 214, 214, 1);
+
+    > svg {
+      flex: none;
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 1rem;
+
+      > path {
+        stroke: #292D32;
+      }
+    }
+
+    &:focus-within {
+      border-bottom: 1.5px solid #06A4D9;
+
+      > svg {
+
+        > path {
+          stroke: #06A4D9;
+        }
+      }
+    }
+
+    &--comment {
+      width: 100%;
+    }
+
+    &--checkbox {
+      position: relative;
+      z-index: 2;
+      align-items: flex-start;
+      width: 32rem;
+      text-align: left;
+
+      .calculate__checkbox-personal {
+        margin-right: 1.5rem;
+        margin-left: 0;
+      }
+    }
+
+    &--callback {
+      width: 28rem;
+    }
+  }
+
+  &__input {
+    flex: auto;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23.4rem;
+    height: 6rem;
+    border-radius: 6rem;
+    background-color: #212129;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #fff;
+  }
+
+  &__image-block {
+    position: absolute;
+    left: -8rem;
+    top: 22.6rem;
+    width: 50.6rem;
+    height: 30.5rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &--callback {
+      top: 7.8rem;
+      left: 6.2rem;
+      width: 16.5rem;
+      height: 43.3rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .modal-window {
+    &__container {
+      width: 62.8rem;
+      height: 113rem;
+      padding: 8rem 6rem;
+      margin-left: 4.8rem;
+      border-radius: 0 7rem;
+
+      &--callback {
+        width: 67rem;
+        height: 96rem;
+        padding: 8rem;
+        margin: 0 auto;
+
+        > .modal-window__title,
+        > .modal-window__description {
+          margin-left: 20rem;
+        }
+
+        > .modal-window__description {
+          margin-bottom: 7rem;
+        }
+      }
+    }
+
+    &__close {
+      right: 5rem;
+      top: 5rem;
+
+      > svg {
+        width: 3.4rem;
+        height: 3.4rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 2rem;
+      margin-left: 14.4rem;
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    &__description {
+      margin-bottom: 12rem;
+      margin-left: 14.4rem;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__form {}
+
+    &__input-block {
+      width: 100%;
+      padding-bottom: 2rem;
+      margin-bottom: 5rem;
+
+      > svg {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2rem;
+      }
+
+      &--comment {
+        width: 100%;
+      }
+
+      &--checkbox {
+        width: 100%;
+        margin-bottom: 6rem;
+        font-size: 3rem;
+        line-height: 3.8rem;
+
+        .calculate__checkbox-personal {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    &__input {
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__link {
+      width: 35.4rem;
+      height: 9rem;
+      margin-left: auto;
+      border-radius: 12rem;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+
+    &__image-block {
+      top: 21.4rem;
+      left: -4.8rem;
+      width: 39rem;
+      height: 23.6rem;
+
+      &--callback {
+        top: -4.2rem;
+        left: 6rem;
+        width: 16.2rem;
+        height: 42.6rem;
+      }
+    }
+  }
+}

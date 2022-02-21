@@ -1,0 +1,442 @@
+.rent-calculate {
+  margin-bottom: 19rem;
+}
+.rent-calculate__title {
+  margin-bottom: 6rem;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 5.1rem;
+  color: #292D32;
+}
+.rent-calculate__calculate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #CCCCCC;
+}
+.rent-calculate__input-block {
+  width: 73rem;
+  height: auto;
+  padding: 6.3rem 6.6rem 5.7rem 5rem;
+  background-color: #FFFFFF;
+}
+.rent-calculate__input-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4.5rem;
+}
+.rent-calculate__input-item--radio {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+.rent-calculate__input-item--radio .rent-calculate__input-name {
+  margin-bottom: 2.5rem;
+}
+.rent-calculate__input-item--radio .calculate__calc-price {
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+.rent-calculate__input-item--radio .calculate__calc-price > span {
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #000;
+}
+.rent-calculate__input-item--radio .calculate__calc-checkbox {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+}
+.rent-calculate__input-item:last-child {
+  margin-bottom: 0;
+}
+.rent-calculate__input-name {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #292D32;
+}
+.rent-calculate__calc-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: 5rem;
+  border: 1px solid #d6d6d6;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.rent-calculate__calc-counter > input {
+  width: 100%;
+  text-align: center;
+  cursor: text;
+}
+.rent-calculate__minus-icon {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+}
+.rent-calculate__minus-icon > path {
+  stroke: #777;
+}
+.rent-calculate__plus-icon {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+}
+.rent-calculate__plus-icon > path {
+  stroke: #777;
+}
+.rent-calculate__input-radio-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.rent-calculate__offers-block {
+  width: 72.6rem;
+  height: auto;
+}
+.rent-calculate__offer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 14rem;
+  padding: 0 5rem 0 3rem;
+  margin-bottom: 2rem;
+  border: 1px solid #CCCCCC;
+  cursor: pointer;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  color: #292D32;
+}
+.rent-calculate__offer-item > .calculate__calc-checkbox {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 3rem;
+}
+.rent-calculate__offer-item:last-child {
+  margin-bottom: 0;
+}
+.rent-calculate__offer-item:hover {
+  background: #fff;
+}
+.rent-calculate__offer-item.check {
+  background: linear-gradient(95.11deg, #06A4D9 47.09%, #0597C8 109%);
+  color: #fff;
+}
+.rent-calculate__offer-item.check .rent-calculate__offer-name-action {
+  background: #43D0FF;
+  color: #fff;
+}
+.rent-calculate__offer-item.check .rent-calculate__price-text {
+  color: #fff;
+}
+.rent-calculate__offer-name {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  text-align: left;
+}
+.rent-calculate__offer-name-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13rem;
+  height: 3.1rem;
+  margin-top: 1rem;
+  border-radius: 10rem;
+  background-color: rgba(109, 39, 116, 0.2);
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #6D2774;
+}
+.rent-calculate__price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.rent-calculate__price {
+  margin-right: 0.8rem;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 5.1rem;
+}
+.rent-calculate__price-text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #918D8D;
+}
+.rent-calculate__calc-bottom-block .calculate__total-block {
+  width: auto;
+}
+.rent-calculate__total-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 2rem;
+}
+.rent-calculate__total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 3.8rem;
+}
+.rent-calculate__total-price--old {
+  display: none;
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #777;
+}
+.rent-calculate__total-price--old > .rent-calculate__total {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.8rem;
+  text-decoration: line-through;
+}
+.rent-calculate__total-price--old.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.rent-calculate__total {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 6.3rem;
+}
+.rent-calculate__total-action-text {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #292D32;
+}
+.rent-calculate__total-action-text.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.rent-calculate__total-action {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding: 0.5rem 0.8rem;
+  margin-left: 1.5rem;
+  border-radius: 10rem;
+  background-color: rgba(109, 39, 116, 0.2);
+  color: #6D2774;
+}
+
+@media (max-width: 48em) {
+  .rent-calculate {
+    margin-bottom: 20rem;
+  }
+  .rent-calculate__title {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  .rent-calculate__calculate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    padding-bottom: 8rem;
+    border-bottom: 1px solid #CCCCCC;
+  }
+  .rent-calculate__input-block {
+    width: 100%;
+    padding: 4rem 3rem 5rem 3rem;
+    margin-bottom: 8rem;
+  }
+  .rent-calculate__input-item {
+    margin-bottom: 4rem;
+  }
+  .rent-calculate__input-item--radio .rent-calculate__input-name {
+    margin-bottom: 3rem;
+  }
+  .rent-calculate__input-item--radio .calculate__calc-price {
+    margin-right: 0;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  .rent-calculate__input-item--radio .calculate__calc-price > span {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+  .rent-calculate__input-item--radio .calculate__calc-checkbox {
+    width: 3rem;
+    height: 3rem;
+  }
+  .rent-calculate__input-name {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .rent-calculate__calc-counter {
+    width: 20rem;
+    height: 7.2rem;
+    padding: 0 3rem;
+    border-radius: 10rem;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .rent-calculate__minus-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .rent-calculate__plus-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .rent-calculate__input-radio-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .rent-calculate__offers-block {
+    width: 100%;
+  }
+  .rent-calculate__offer-item {
+    height: 19rem;
+    padding: 0 8rem 0 4rem;
+  }
+  .rent-calculate__offer-item > .calculate__calc-checkbox {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 4rem;
+  }
+  .rent-calculate__offer-name {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .rent-calculate__offer-name-action {
+    width: 20rem;
+    height: 5rem;
+    border-radius: 20rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  .rent-calculate__price {
+    margin-right: 0.6rem;
+    font-size: 5rem;
+    line-height: 6.4rem;
+  }
+  .rent-calculate__price-text {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  .rent-calculate__calc-bottom-block .calculate__total-block {
+    width: 100%;
+  }
+  .rent-calculate__total-price {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .rent-calculate__total-price--old {
+    margin-left: 3rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .rent-calculate__total-price--old > .rent-calculate__total {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .rent-calculate__total {
+    margin-right: 0.6rem;
+    font-size: 6rem;
+    line-height: 7.6rem;
+  }
+  .rent-calculate__total-action-text {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .rent-calculate__total-action-text > span {
+    width: 39rem;
+  }
+  .rent-calculate__total-action {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    padding: 1rem 1.6rem;
+    margin-left: 2rem;
+    border-radius: 20rem;
+  }
+}/*# sourceMappingURL=rent-calculate.css.map */

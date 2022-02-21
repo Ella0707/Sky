@@ -1,0 +1,113 @@
+.rent-intro {
+  margin-bottom: 16rem;
+  padding-bottom: 10rem;
+
+  &__image-bg-block {
+    width: 71rem;
+    height: 69.5rem;
+    border-radius: 0;
+  }
+
+  &__location-tag {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    > svg {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-right: 0.5rem;
+
+      > path {
+        stroke: #292D32;
+      }
+    }
+  }
+
+  &__title {
+    color: #292D32;
+  }
+
+  &__description {
+    color: #777;
+  }
+
+  &__info-block {
+    align-items: center;
+  }
+
+  &__info-item {
+    margin-right: 8rem;
+  }
+
+  &__item-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    font-size: 1.7rem;
+    line-height: 2.55rem;
+  }
+
+  &__item-title {
+    font-weight: normal;
+    color: #777;
+  }
+
+  &__item-description {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 48em) {
+  .rent-intro {
+    padding-bottom: 0;
+
+    &__image-bg-block {
+      width: 60.4rem;
+      height: 78rem;
+      top: 65rem;
+    }
+
+    &__location-tag {
+      margin-bottom: 2rem;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 3.8rem;
+
+      > svg {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+      }
+    }
+
+    &__description {
+      margin-bottom: 38rem;
+    }
+
+    &__info-block {
+      align-items: normal;
+      width: fit-content;
+    }
+
+    &__info-item {
+      margin-right: 0;
+    }
+
+    &__item-text-block {}
+
+    &__item-title {
+      font-size: 2.8rem;
+      line-height: 3.9rem;
+    }
+
+    &__item-description {
+      font-size: 3rem;
+      line-height: 4.2rem;
+    }
+  }
+}

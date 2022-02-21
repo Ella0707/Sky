@@ -47,18 +47,25 @@
     font-size: 2rem;
     line-height: 2.5rem;
 
-    > svg {
-      width: 2.5rem;
-      height: 2.5rem;
-      margin-left: 4rem;
-      cursor: pointer;
+    > div {
+      > svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 4rem;
+        cursor: pointer;
 
-      > circle {
-        fill: #fff;
+        > circle {
+          fill: #fff;
+        }
+
+        > path {
+          fill: #292D32;
+        }
       }
 
-      > path {
-        fill: #292D32;
+      > ul {
+        top: 3.5rem;
+        left: 0;
       }
     }
   }
@@ -114,17 +121,70 @@
   }
 
   &__calc-service-question-icon {
-    flex: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    > svg {
+      flex: none;
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
 
-    > circle {
-      fill: #E0E0E0;
+      > circle {
+        fill: #E0E0E0;
+      }
+
+      > path {
+        fill: #292D32;
+      }
     }
 
-    > path {
-      fill: #292D32;
+    &:hover {
+      > .calculate__calc-question-hover {
+        display: block;
+      }
+    }
+  }
+
+  &__calc-question-hover {
+    position: absolute;
+    top: 0;
+    left: 3.5rem;
+    z-index: 9;
+    display: none;
+    width: 30rem;
+    padding: 1.5rem 1.2rem 1.5rem 2.3rem;
+    border-top: 0.5rem solid #DCDCDC;
+    background-color: #fff;
+    box-shadow: 0 0 6rem 0 rgba(22, 11, 21, 0.1);
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+
+    > li {
+      list-style: disc;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::marker {
+        color: #06A4D9;
+      }
+    }
+
+    &--bold {
+      font-weight: 600;
+    }
+
+    &--blue {
+      color: #06A4D9;
+    }
+
+    p {
+      display: inline;
     }
   }
 
@@ -450,6 +510,15 @@
       &--min {
         width: 100%;
         margin-bottom: 3rem;
+
+        .calculate__calc-service-question-icon {
+          display: flex;
+        }
+
+        .calculate__calc-question-hover {
+          left: 0;
+          text-align: left;
+        }
       }
     }
 
@@ -501,8 +570,42 @@
     }
 
     &__calc-service-question-icon {
-      width: 3.8rem;
-      height: 3.8rem;
+      > svg {
+        width: 3.8rem;
+        height: 3.8rem;
+      }
+    }
+
+    &__calc-question-hover {
+      width: 38.6rem;
+      left: -34.8rem;
+      top: 5.8rem;
+      padding: 2rem 2rem 2rem 4.4rem;
+      border-top: 1rem solid #DCDCDC;
+      box-shadow: 0 0 12rem 0 rgba(22, 11, 21, 0.1);
+      font-size: 2.4rem;
+      line-height: 3rem;
+
+      > li {
+        list-style: disc;
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::marker {
+          color: #06A4D9;
+        }
+      }
+
+      &--bold {
+        font-weight: 600;
+      }
+
+      &--blue {
+        color: #06A4D9;
+      }
     }
 
     &__calc-counter {

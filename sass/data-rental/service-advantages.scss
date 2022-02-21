@@ -1,0 +1,117 @@
+.service-advantages {
+  margin-bottom: 12rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-block {
+    padding-top: 8rem;
+
+    .popular-services__description {
+      width: 56rem;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 72.5rem;
+  }
+
+  &__item {
+    width: 34.5rem;
+    height: auto;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    border-top: 0.5rem solid #212129;
+    border-radius: 0 0 4.5rem 0;
+    background-color: #fff;
+    box-shadow: 1.5rem 3rem 10rem 0 #160B1514;
+  }
+
+  &__icon {
+    width: 4.6rem;
+    height: 4.6rem;
+    margin-bottom: 2.5rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+  }
+
+  &__item-description {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .service-advantages {
+    margin-bottom: 16rem;
+
+    &__container {
+      flex-direction: column;
+      justify-content: normal;
+    }
+
+    &__info-block {
+      padding-top: 0;
+
+      .popular-services__description {
+        width: 100%;
+      }
+    }
+
+    &__cards {
+      justify-content: normal;
+      width: 100%;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 4rem;
+      border-top: 0.6rem solid #212129;
+      border-radius: 0 0 4rem 0;
+      box-shadow: 3rem 6rem 20rem 0 #160B1514;
+    }
+
+    &__icon {
+      width: 7.6rem;
+      height: 7.6rem;
+    }
+
+    &__item-title {
+      width: 48rem;
+      font-size: 3.6rem;
+      line-height: 4.4rem;
+
+      > br {
+        display: none;
+      }
+    }
+
+    &__item-description {
+      width: 100%;
+      margin-top: 3rem;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+  }
+}

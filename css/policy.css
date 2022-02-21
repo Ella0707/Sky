@@ -1,0 +1,167 @@
+.policy-intro {
+  position: relative;
+  min-height: 42.5rem;
+  padding: 10rem 0 10rem 0;
+  margin-bottom: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.policy-intro__container {
+  margin-bottom: -3rem;
+}
+.policy-intro__background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+}
+.policy-intro__background > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.policy-intro__title {
+  width: 105rem;
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 6.6rem;
+  color: #fff;
+}
+
+.policy-text {
+  margin-bottom: 18rem;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+.policy-text__container {
+  width: 110rem;
+}
+.policy-text__title {
+  margin-bottom: 3.5rem;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 5.1rem;
+}
+.policy-text__block {
+  margin-bottom: 10.5rem;
+}
+.policy-text__sub-block {
+  margin-bottom: 3.5rem;
+}
+.policy-text--bold {
+  font-weight: 600;
+}
+.policy-text--blue {
+  color: #06A4D9;
+}
+.policy-text dd {
+  margin-left: 5rem;
+}
+.policy-text p {
+  margin-bottom: 1.3rem;
+}
+.policy-text ul {
+  padding-left: 2rem;
+}
+.policy-text ul li {
+  list-style: disc;
+  margin-bottom: 3.5rem;
+  padding-left: 0.5rem;
+}
+.policy-text ul li::marker {
+  color: #EF4023;
+}
+.policy-text ul ol {
+  margin-top: 1.5rem;
+}
+.policy-text ol {
+  padding-left: 5.5rem;
+  border-left: 2px solid #ef4023;
+}
+.policy-text ol li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  list-style: decimal-leading-zero;
+}
+.policy-text ol li::marker {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #777;
+}
+.policy-text a {
+  text-decoration: underline;
+}
+
+@media (max-width: 48em) {
+  .policy-intro {
+    min-height: 50rem;
+    padding: 14rem 0 10rem 0;
+  }
+  .policy-intro__container {
+    margin-bottom: -5rem;
+  }
+  .policy-intro__title {
+    font-size: 5.4rem;
+    line-height: 6.5rem;
+  }
+
+  .policy-text {
+    margin-bottom: 16rem;
+    font-size: 3rem;
+    line-height: 3.9rem;
+  }
+  .policy-text__container {
+    width: 100%;
+  }
+  .policy-text__title {
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  .policy-text__block {
+    margin-bottom: 12rem;
+  }
+  .policy-text__sub-block {
+    margin-bottom: 4rem;
+  }
+  .policy-text dd {
+    margin-left: 4rem;
+  }
+  .policy-text p {
+    margin-bottom: 2rem;
+  }
+  .policy-text ul {
+    padding-left: 4rem;
+  }
+  .policy-text ul li {
+    margin-bottom: 4rem;
+    list-style: disc;
+  }
+  .policy-text ul li::marker {
+    font-size: 4rem;
+  }
+  .policy-text ul ol {
+    margin-top: 1.5rem;
+  }
+  .policy-text ol {
+    padding-left: 8rem;
+    border-left: 1px solid #ef4023;
+  }
+  .policy-text ol li {
+    margin-bottom: 2rem;
+    list-style: decimal-leading-zero;
+  }
+  .policy-text ol li::marker {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+}/*# sourceMappingURL=policy.css.map */

@@ -1,0 +1,258 @@
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(33, 33, 41, 0.7);
+}
+.modal-window.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal-window__container {
+  position: relative;
+  width: 105rem;
+  min-height: 59rem;
+  padding: 8rem 9rem 0 29rem;
+  border-radius: 0 6rem;
+  background-color: #fff;
+  color: #292D32;
+}
+.modal-window__container--callback {
+  width: 96rem;
+  min-height: 45.5rem;
+  padding: 8rem 8rem 0 29rem;
+}
+.modal-window__close {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  cursor: pointer;
+}
+.modal-window__close > svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.modal-window__close > svg > path {
+  stroke: #292D32;
+}
+.modal-window__title {
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 5.1rem;
+}
+.modal-window__description {
+  margin-bottom: 4.4rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+.modal-window__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.modal-window__input-block {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 1.5px solid #d6d6d6;
+}
+.modal-window__input-block > svg {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+}
+.modal-window__input-block > svg > path {
+  stroke: #292D32;
+}
+.modal-window__input-block:focus-within {
+  border-bottom: 1.5px solid #06A4D9;
+}
+.modal-window__input-block:focus-within > svg > path {
+  stroke: #06A4D9;
+}
+.modal-window__input-block--comment {
+  width: 100%;
+}
+.modal-window__input-block--checkbox {
+  position: relative;
+  z-index: 2;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 32rem;
+  text-align: left;
+}
+.modal-window__input-block--checkbox .calculate__checkbox-personal {
+  margin-right: 1.5rem;
+  margin-left: 0;
+}
+.modal-window__input-block--callback {
+  width: 28rem;
+}
+.modal-window__input {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+.modal-window__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23.4rem;
+  height: 6rem;
+  border-radius: 6rem;
+  background-color: #212129;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #fff;
+}
+.modal-window__image-block {
+  position: absolute;
+  left: -8rem;
+  top: 22.6rem;
+  width: 50.6rem;
+  height: 30.5rem;
+}
+.modal-window__image-block > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modal-window__image-block--callback {
+  top: 7.8rem;
+  left: 6.2rem;
+  width: 16.5rem;
+  height: 43.3rem;
+}
+
+@media (max-width: 48em) {
+  .modal-window__container {
+    width: 62.8rem;
+    height: 113rem;
+    padding: 8rem 6rem;
+    margin-left: 4.8rem;
+    border-radius: 0 7rem;
+  }
+  .modal-window__container--callback {
+    width: 67rem;
+    height: 96rem;
+    padding: 8rem;
+    margin: 0 auto;
+  }
+  .modal-window__container--callback > .modal-window__title,
+.modal-window__container--callback > .modal-window__description {
+    margin-left: 20rem;
+  }
+  .modal-window__container--callback > .modal-window__description {
+    margin-bottom: 7rem;
+  }
+  .modal-window__close {
+    right: 5rem;
+    top: 5rem;
+  }
+  .modal-window__close > svg {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .modal-window__title {
+    margin-bottom: 2rem;
+    margin-left: 14.4rem;
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  .modal-window__description {
+    margin-bottom: 12rem;
+    margin-left: 14.4rem;
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .modal-window__input-block {
+    width: 100%;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+  }
+  .modal-window__input-block > svg {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+  }
+  .modal-window__input-block--comment {
+    width: 100%;
+  }
+  .modal-window__input-block--checkbox {
+    width: 100%;
+    margin-bottom: 6rem;
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .modal-window__input-block--checkbox .calculate__checkbox-personal {
+    margin-right: 2rem;
+  }
+  .modal-window__input {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .modal-window__link {
+    width: 35.4rem;
+    height: 9rem;
+    margin-left: auto;
+    border-radius: 12rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .modal-window__image-block {
+    top: 21.4rem;
+    left: -4.8rem;
+    width: 39rem;
+    height: 23.6rem;
+  }
+  .modal-window__image-block--callback {
+    top: -4.2rem;
+    left: 6rem;
+    width: 16.2rem;
+    height: 42.6rem;
+  }
+}/*# sourceMappingURL=modal-window.css.map */
