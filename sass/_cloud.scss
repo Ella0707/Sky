@@ -1,0 +1,35 @@
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+
+.banner.cloud {
+    margin-bottom: 16rem;
+    .banner {
+
+        &__subtitle {
+            width: 65rem;
+        }
+    }
+}
+
+
+
+
+.scroll.cloud {
+    .scroll {
+        position: relative;
+
+        &__inner {
+            padding: 3.2rem 3rem 3.2rem 2.3rem;
+        }
+
+        &__list-left {
+            margin-right: 5rem;
+        }
+    }
+}

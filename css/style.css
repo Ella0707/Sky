@@ -5784,6 +5784,31 @@ input[type=number] {
   width: 46rem;
 }
 
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+.banner.cloud {
+  margin-bottom: 16rem;
+}
+.banner.cloud .banner__subtitle {
+  width: 65rem;
+}
+
+.scroll.cloud .scroll {
+  position: relative;
+}
+.scroll.cloud .scroll__inner {
+  padding: 3.2rem 3rem 3.2rem 2.3rem;
+}
+.scroll.cloud .scroll__list-left {
+  margin-right: 5rem;
+}
+
 .articles {
   padding-top: 22rem;
 }
